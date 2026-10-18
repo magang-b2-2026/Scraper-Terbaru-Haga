@@ -1,0 +1,4 @@
+url
+https://example.com
+https://www.kompas.com
+https://www.detik.com

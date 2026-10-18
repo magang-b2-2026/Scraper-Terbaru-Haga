@@ -1,0 +1,7 @@
+playwright
+requests
+beautifulsoup4
+markdownify
+trafilatura
+googlenewsdecoder
+ 

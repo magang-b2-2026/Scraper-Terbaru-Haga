@@ -1,0 +1,121 @@
+=== SCRAPING LOG / FAILURE REPORT (2026-09-27 17:48:15) ===
+Total URL diproses: 92
+Total Berhasil: 63
+Total Gagal / Kosong: 29
+
+- URL: https://www.google.com/goto?url=CAESawHrOzAVFnfWwRExaPQTEyAbPR8KVZuUzFEp9dYNAAHqQPSpmDytyzTQN5eQcJjCl5zkqJxFbHQBLAVhLExjFvFqYADF31GrPiY4-aHnB9YFsxZLoIkUSjEAgMHCGVqRNvoUqkiy3JtZbHML
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESZgHrOzAVINpwc5y3WZBF5U4LH4MzLwAayYomPexNCQ5ickZoUcmKkkDp7XSkGKblAc3jxHER9Rkus0e9edZWoth4x69aJAEYqeLVPBK1TLB0qU_EKilSt5U3zPFARiCGgp4l4-D0bQ
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESxgEB6zswFdT8Hxr4s-c1uelb-C1I7c-73oCbPoC1_AgacsGBJ5eRPyElL71xo00X5inLrV-XBUenuyhvqOaHdrzB0v-qmdaKofyiSwDtO-YRWissPB-90G_jLXBW4SQ8povrfzURhG9CPS4x57sOOMnMP99lF9YvdBohmhjf2OKWngjuenPd8khEPG13TOqcVoDnqDxLvA7fUlzupcvA-xjgJQmW3lh8zfrzhBs5_yHY8lo_Kt3EoLOLc3a4UFqS1N3UlVbJkE0
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESzgEB6zswFdKUhpk5RdtdA7NrzbffBlpitaxcbRDNltLYbpDV71II75xd9nQlPrBZUt5II6qxGBDMbQ3zY_WTBQopxYiSXoee_WsKpxondu5b_XJBHNLkY5Nd9eh0sSfSd9L0_t0lS2S7u_cC0I4plmlMvvAdP3FyeDxQGb1bhqTmW5yFJkEPgEtGqYgxEAt4Aele8Ia5nfTGEbZn2sgaW8g8JBeyBTFbh4tuEkJBpsSdOA-p7IHG_2OF-bNcE_TVYyebxSNnR4qPzaglkDIDQA
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESdwHrOzAVo9JFICvsluiR0bXLSF5Nem5lLh09BSqCQO4DU8Qcmav2ZpSDxqlIlqMRe27k2BbiFXRZ_9PBjZjpMlXWKlAsnlkBfJrWYoNNsaVUi-1B7LS_8PfJDFR8dhFuV_OE6gdBXrj3X_vxQVFser9UoV7CwrmG
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESYwHrOzAV-9VX6n_IRukJU8GeYfbXoTwyDxPb6LB6CJoRDnxJolBS0PwRNUbEuBZgjdCys2g7_t1UNBs_x_NovBCQwh7xcd3g-ss3R0jVcD3qI5NpYNjdgXyz9sjVSa-SHuRimA
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESpQEB6zswFcitcByH_smIh4lZ-pBvFZjyod2CE4rhhqTLxhuR09_7iljfAPm9NcqOx4Rz1O2g1b4G1KQzUF_DbTBWpc8HzDgUEnWQkUwT1tsL-PMT3mAxlcjDG3Z0Tr8QmlFq83xcbefFIsPn0S1aQHmC0kzA5InQoS33xWhDcAtDvC9_oRqwSiyVJRsa_d5WsM46NdD4TKlN0NqpWCh7o8GjyoJdvlE
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAES0AEB6zswFeub0HUU-GhMjrKaGUmdsywbrOfrckekqe-ZTFpWw5q1sNMCUbj_7cVD8OsxZ7iK68GmqI2edQLTZLkttNL3FW9bsMi6a3rTwo64oHbhTqVxmGgsxLJ5KZNXWycYdou9_M7IWc2I_RGX8o4WVxy7aPQAEM7l9X36b-gZJxhNTbhFdnxfkIKdX1xrGcizwFk_rBh-2TkYyIKNVECdnaaI2e6oEiUU3UVGe92w6I0EWp0Hui89THV-68M8tLc39yue8aQv9U3geegEPKHO
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESZgHrOzAV5gkn5Zj6IQGnpEFQxExIFal6srTmOKkBrhFqY9cykY5rFQ-wUY1LTYnD-uVBOD_Kt9_fxzQ4VJbOUusLxtJo8SQQYUEWeUyGPQrTUz7_DARzElFROj4AQTSgjvdkCoRSSg
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESxgEB6zswFXmjNbr_asTwak8r2ADOus4CTpYuVf6enUPkbvf5MR4X4Gc6RYtfLgrt_a0TzNsvbSwPbbRcCB-Q9fYqMgQNQjWejbO7kwlAtD0yw6gOFTekrOVpm0U7RDCbXhUNTfRg1KWjF6a8PRuYMLjTDyGd5b6kplp8VPYtXkOSahTNna_ZiEFVq3-DBjLGzZEjrqIYfabuD8ZOwresRBQH3ap7iHkUGK9DkQx9TsqFwDSFc0r7h87vU2j5wudkHgSpSP9O_ng
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESeQHrOzAVKiGRLWARQNjwKteE2guAymWMwR8Sig2Iwb2a_t7Wz_3064xDnNxdcq90dylNU6FAQcQHdPenX0QTCruWgxuIFWt1UH0yTGjqLX5ufiwGjqo0qUuWHKYj3WKjffiQNzT6Byc1VkDhW9-uyg9WlPouYtKBnKU
+  CSS Path: body p
+  Status: ERROR: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+
+- URL: https://www.google.com/goto?url=CAESZgHrOzAVFqaknqWpsXNwSaxPD9c7iwlIKJzizELIL5X2u9WaDfFepkQYwRPzxdf0I4ArA6qxG2PPKKd78vFB_MYp7pWqZtk3-pavZEolWMyjcq6dqsJN1jc_oDnEUHPrbhLlKXMeqQ
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESxgEB6zswFf102Kf_og037IV4ZhJiJjTbIHQ6pG4K6-z9mmAJkJgfNEiwwPZ73ooUosgpzbGlHeYhbgy1cWiCZWFvX20eiD64j8Wq4dAmiirh3AItu4IuUSnD00nNcx1iUEsf5oYrGrEyjYaBetuMlE8plfWjC_eFTQhi6uuDaPOwWfGlWQ1G1u7QOiIf1zP2PgzrR4Ikfc-JvZFQLh13GILmLliWuo8VU1txpE3zCkpbtgl4y5MgbdOzNc4ij4-tqDmXXCMVQUU
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESZgHrOzAVM2mg5io-A1-UwAm2Hj2MCAJYED6vwLxgvEjj6XniOJnDWDLaOgDd7tjlTi4YraKv0PNwI16NTx5DXgZhMczu6LjoomcWiFeu0-Wl0wUdWxeAgUTwD94KXwnXV4m7yAoaMQ
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESxgEB6zswFdu0Gnrs160u1mAH1NzEJS5f_dw4BJkvj82wvQpUzO8hjZBHfqUlxJfBnJDt_044MVHKODqvYHTldvODhDi6zgNAP6n0jR7lHrAlzrtvTjwN33E_6NgSqzV2HNXgZEWG_rEBz_B6DmfSJJcu9o7PrdUjNP6_jb6BJeoLec9h1ytjPnrTS2SC-Zlix0BaOhIFcu4qhtWCoWr8sZSUbCXFPi9cuijTj6UdJU7V2lPWxguHfGmEz3WatZ9fGSV9JtC9wRo
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESYwHrOzAVH1CVAEHlv9O-Fj7gqDKThxEn3VRcHyKWOnrxOox6M-1J5-2b9XlL1PXek2IDppk0vFEEAb-tyWcyN6W3LQBxgOYjpQGCgGeFSTkYgz_E87giMXoIA_wEM9IAG9ma3g
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESZgHrOzAVrC7zH7Iwru8p36gX2UVWctCwOMIXrtSEYiwjKr1CWLufheQKs5zfMoyXsDZYPwP9fmsiSYdQ2I0Hz1AAqUKc_o4skSGnHE6GQOeH5DcTV0EMXpmTNdI7cImx3dMjP1KG8g
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAEScAHrOzAVfZYmIl2R6Ktxdqe13qfBgAfG4SfxhY8DDaUhGxt0TdHsoiAGUUhv6jWWEukUesvX-5iRR_7YdEgwbGVdhDsn2eLNcFaWF8Q-m8_YnUMVS93TUeO-M9SwiDeKtoYadKIgZXAu4QPFneynbfs
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESygEB6zswFTD6kGjF5j4UNCgl463Zr5bmqmpd4SYqsr80wrSxDcQCbQNILK6cQTySIdSFiy8M6I59hnRPwo-0pwvYU8JVufinxwRe8KFYKPONaC7w4ZzFn57MHW3YvejqtbyRYL2H7VI_2HRLR_bkEGD-0ct360fDZnHDjI2AXQSFr-OA_ShDIDICdprthUKt--b74X1zgdUfTFSIsjUdvAW44Ww3aPmETTcU9iqpmKAe7tlcIB_bhrgZwfldV_2RpA02I91S2Pmi2_S1
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESdwHrOzAVkYBEjDgrPpQpD-GeEaeGqQ0zGS8EpcAnEyKRPrv_mVfPGnQMN3dcYwkUgLA5-SZARKeSA2eG9ytOwtzLjmrGajBUacU9ucC8ShlF__wk4uHn7G-6fCdMtrW_BClTTjdYC88xT2ruLcmDfYoSKo7aUE3R
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESewHrOzAVpcKu-opKonhAmmBw6hAHydBZ5fdLUYcONdrvbPGGxYghE2ZHQbzEhrTTduto5_GEIv1X4XKGXEWkhpP06-mVvsw_BsloxZT9HKkFatCH_8VztTfzREP2CA4IJloJudqhznxiqPLYHTBjALDQjVo72MhEEBcihg
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESjwEB6zswFUXVTuDDIHTvBWqq3qK733r4gBtfsNSd8Y4yLiRswSKRAL_3qnTDjCGXPIpX2KuqabOyJbM7Qc1TygO1sW-MXosdcUeBe6D8-yliebw0eBvw6kAAJG8HWy6qNBefdcTzjKSdyaKDlseTnPnJkTYweIvsf3R-yRADevJXjZyBTjwU8Zlk7HNpAcHiLw
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESYwHrOzAVspbi32mQfSlorR0210UWVC8YmqJiUH30Wyc7TxSo3TSHC5sFaTMF1VeTfyiWvvINHZ3ngks5RRlMKcmvc3QkGEjnunOZo0yFlsJpkSW9kpV_zo9TBj6itxkF2teRnw
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESdwHrOzAV_X0SwEWCXWpJgyVFEjOTp3G1jYx2pNtLNNESC3lb3i-GRTcY9SqQKaMve4WzK9cecqEHGYK4gQnfPKFzIpMN4TEsANEXOYZoiOChwGp8D-ZR9en_Wb36IZSACLOw2xqLSUSUr2u3jIYe7d3u8Z_OFg3R
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAES1AEB6zswFdKz4jOgSavqe1gtt3rYSPyBi-igZAibQs9gyy5ylLWK_NTr7aDr6YJGSY0wvDtbPiQTCGfzKYRfqtOSofS0Epoo8a9RUZJ-bAfNk0SpsRvMSp64BmgkKu7Qy9f3JRE5QymvlTW3aL8H8jU4c2lHOolGho09V6lp0DyNaTgJAYbw6iy_zf5iLW71VrHtRwZ-6N1roYT4oXIyYwkSnW96QtIDltAUQqriSHREbQ1-0F085onWORG8A9GXOG5gXDZuCGpjatKGihUQIfnAPik1yA
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESZgHrOzAVYETXe5E4ErFE2zuNIovmcsiDAt51-Yl6h5FaqWPkbWbtSFZ6wr8jm2cOfK1dPPGtGB4HshCPs8wEUk04Er7D04_LTcdjJsbDil3uWBn4l_LWeuup3TgmaHCACLZmZXqv2w
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAES1AEB6zswFT0LCKieW-ZL-ksPrbmDcyqDvsc-_F-jItdRSav6wV8ggDbVoK-BpBd20xAkANxf67K1duQMc0B-z928x3fT-VMnqYkq7NUtjmOrTH-ZlpPJw780QYSb4zqkq9b9CffHnRI_tFz1-nDq_oIAuhDG2yGXTEz2fDbOuSd51KAvtDSJqAO_qycO3wI1fzP2wjAiWJAedA5JCswaJl1XUlQJYYro4_IWxMu7SLU6yJyFeFRmzhNZzNQA8-Fqw9myT8OZ2kwvbgU4RIo70zIaQ-w-Mg
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESzAEB6zswFYFTPPJvaPAV8cVsyUjcCfjt4aVEHgojVPrfUC7DAaX0_ug0WwBpBCIW9KG1GDZ0mJlav9rnMoy1Dx-GlLEd92t7Ktali1TQX5iYj4bi7BmFGtAXwbY2KGgJ8KCqQtX6IG3xCzJDeNMDbiFnaYa9O2XLSTrMYgNUCl9KfP4eVEjAZyKKnm8mp1qhEHnNjfZoJ6xmKltoHA-ssWn47eDX8Xj3cHd6hV4kEZ8hmrGikKF4dXZpXR0tmtOTPv78HUJcC5eOkNpxvG8
+  CSS Path: body p
+  Status: SUCCESS
+
+- URL: https://www.google.com/goto?url=CAESZgHrOzAVdBEk5R6QucEGuCJ5CejnulTyokUIWrQpkqc76fb6FNuEn57RnGrw7nKNP2ZrqgmKFaF_MjGZ4NaZ4nf1rN_5ocM3nrUYRTbaNEk8J2Vq_yrtfdOaYnz89D60aSnE5IJ6Wg
+  CSS Path: body p
+  Status: SUCCESS
+
