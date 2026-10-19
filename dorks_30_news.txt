@@ -1,0 +1,54 @@
+# ==============================================================================
+# Google Dorking Templates for 30 Media Outlets + Government (.go.id) + Academic (.ac.id)
+# Multi-condition: when:10d (10 hari), when:30d (30 hari), dan when dihapus (none)
+# Lokasi: hl=id, gl=ID (Semua Indonesia)
+# {kw} akan otomatis diganti dengan keyword pencarian
+# ==============================================================================
+
+# --- 30 Media Berita Nasional & Regional (Multi-condition) ---
+"{kw}" site:kompas.com when:10d
+"{kw}" site:detik.com when:30d
+"{kw}" site:cnnindonesia.com when:10d
+"{kw}" site:cnbcindonesia.com when:30d
+"{kw}" site:tempo.co
+"{kw}" site:tribunnews.com when:10d
+"{kw}" site:liputan6.com when:30d
+"{kw}" site:antaranews.com
+"{kw}" site:republika.co.id when:10d
+"{kw}" site:merdeka.com when:30d
+"{kw}" site:okezone.com when:10d
+"{kw}" site:sindonews.com when:30d
+"{kw}" site:viva.co.id
+"{kw}" site:suara.com when:10d
+"{kw}" site:kumparan.com when:30d
+"{kw}" site:bisnis.com when:10d
+"{kw}" site:kontan.co.id when:30d
+"{kw}" site:katadata.co.id
+"{kw}" site:jawapos.com when:10d
+"{kw}" site:idntimes.com when:30d
+"{kw}" site:grid.id when:10d
+"{kw}" site:tirto.id when:30d
+"{kw}" site:medcom.id
+"{kw}" site:beritasatu.com when:10d
+"{kw}" site:inews.id when:30d
+"{kw}" site:pikiran-rakyat.com when:10d
+"{kw}" site:suaradewata.com when:30d
+"{kw}" site:balipost.com
+"{kw}" site:mediaindonesia.com when:10d
+"{kw}" site:rri.co.id when:30d
+
+# --- Portal Artikel & Berita Pemerintah (.go.id) (Multi-condition) ---
+"{kw}" site:go.id when:10d
+"{kw}" site:go.id when:30d
+"{kw}" site:go.id
+
+# --- Portal Artikel & Publikasi Akademik / Kampus (.ac.id) (Multi-condition) ---
+"{kw}" site:ac.id when:10d
+"{kw}" site:ac.id when:30d
+"{kw}" site:ac.id
+
+# --- Portal Opini & Artikel Non-Berita Lainnya ---
+"{kw}" site:kompasiana.com when:30d
+"{kw}" site:theconversation.com
+"{kw}" site:mojok.co when:30d
+"{kw}" site:infopublik.id when:10d

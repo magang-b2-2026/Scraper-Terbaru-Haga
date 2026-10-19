@@ -1,3 +1,8 @@
-﻿"{kw}"
+# Template Dork Multi-condition (hl=id, gl=ID)
+"{kw}" site:detik.com when:30d
+"{kw}" site:kompas.com when:10d
+"{kw}" site:tempo.co
+"{kw}" site:go.id when:10d
 "{kw}" site:go.id
+"{kw}" site:ac.id when:30d
 "{kw}" site:ac.id

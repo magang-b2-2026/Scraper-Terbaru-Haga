@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
 """
-Web Content Scraper CLI - mode OTOMATIS (untuk dataset CPT)
------------------------------------------------------------
-Tidak ada daftar frasa/selector sampah buatan tangan. Pembersihan memakai
-sinyal struktur & statistik:
+Web Content Scraper CLI - Clean Dataset Generator (untuk dataset CPT)
+---------------------------------------------------------------------
+Urutan ekstraksi per halaman (Tanpa Hardcoded Selectors/Words):
+  1. Judul Artikel (Headline): diekstrak otomatis dari elemen <h1> utama di
+     halaman (berdasarkan visibilitas & struktur DOM), bukan sekadar <title>.
+  2. Isi Artikel:
+     a. CSS path domain (sample_css_paths.csv) bila disediakan.
+     b. Trafilatura pada HTML yang sudah dipangkas, lalu pada HTML mentah.
+     c. Blok terpadat otomatis (menghitung rasio kepadatan teks non-link & <p>).
+     d. CSS default "body" = pilihan TERAKHIR; hasilnya ditandai dan tidak masuk
+        dataset kecuali --keep-body.
 
-  Ekstraksi (per halaman)
-    1. Trafilatura (algoritma main-content, precision lalu recall)
-    2. Blok terpadat otomatis: turun ke anak elemen yang memuat mayoritas
-       teks non-link (tanpa selector apa pun)
-    3. "body" hanya pilihan terakhir -> tidak masuk dataset
-    (opsional) --css-paths: override manual per domain, bila ingin
-
-  Pembersihan per dokumen
-    - link density: blok yang isinya hampir semua link dibuang
-    - span prosa: potong awal & akhir yang bukan kalimat (menu, tanggal,
-      kategori, kredit, daftar "berita lainnya")
-  Pembersihan lintas dokumen (data-driven)
-    - baris yang berulang di banyak halaman = boilerplate (footer, hak cipta,
-      "Editor : ...", "Advertisement", dst) -> dibuang otomatis
+Pembersihan Otomatis (Berbasis Struktur & Statistik, Bukan Kosakata Hardcode):
+  DOM  : buang tag non-teks standar HTML5, ukur kepadatan link hanya pada
+         elemen BLOK (agar link inline seperti "(<a>Kemensos</a>)" tetap utuh),
+         buang kontainer sisipan yang tidak memiliki kalimat utuh.
+  Teks : satu baris = satu paragraf, pasang judul <h1> bersih di baris pertama
+         (kecuali --drop-title), potong dateline pembuka secara struktural,
+         buang baris non-kalimat / ALL-CAPS pendek, dan bersihkan boilerplate
+         lintas dokumen secara otomatis.
 
 Install:
-  pip install playwright requests beautifulsoup4 markdownify trafilatura
+  pip install playwright requests beautifulsoup4 markdownify trafilatura googlenewsdecoder
   playwright install chromium
 """
 
@@ -35,9 +36,9 @@ import random
 import re
 import sys
 import time
+import types
 import xml.etree.ElementTree as ET
 from collections import Counter
-from datetime import date, timedelta
 from typing import Dict, List, Optional, Tuple
 from urllib.parse import parse_qsl, quote_plus, urlencode, urlparse
 
@@ -45,32 +46,71 @@ import requests
 from bs4 import BeautifulSoup, NavigableString
 from markdownify import markdownify as html_to_md
 
+# Shim kompatibilitas googlenewsdecoder dengan selectolax 1.0+
+try:
+    import selectolax.parser  # noqa: F401
+except Exception:
+    try:
+        import selectolax.lexbor
+        _m = types.ModuleType("selectolax.parser")
+        _m.HTMLParser = selectolax.lexbor.LexborHTMLParser
+        sys.modules["selectolax.parser"] = _m
+    except Exception:
+        pass
+
 try:
     import trafilatura
 except ImportError:
     trafilatura = None
 
-# ---------------------------------------------------------------- konfigurasi
-DEFAULT_CSS = "body"  # pilihan terakhir
+# ================================================================ KONFIGURASI
+DEFAULT_CSS = "body"
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 
-# Tag HTML standar yang memang bukan isi artikel (bukan daftar situs tertentu)
-NON_CONTENT_TAGS = ["script", "style", "noscript", "iframe", "svg", "nav",
-                    "footer", "aside", "form", "button", "figcaption"]
+# Spesifikasi W3C HTML5 untuk tag media/interaktif/form (bukan isi teks artikel)
+HTML_NON_TEXT_TAGS = [
+    "script", "style", "noscript", "iframe", "svg", "canvas",
+    "video", "audio", "button", "input", "select", "textarea",
+    "option", "figure", "figcaption", "dialog", "menu", "template"
+]
+# Tag kerangka halaman HTML5: di-unwrap bila membungkus artikel utama, dibuang bila kecil
+HTML_LAYOUT_TAGS = ["nav", "footer", "aside", "header", "form"]
 
-# Ambang statistik (angka, bukan frasa)
-LINK_DENSITY_MAX = 0.6     # blok dengan >60% teks berupa link dibuang
-PROSE_MIN_WORDS = 6        # kalimat = >=6 kata dan diakhiri tanda baca
-DESCEND_RATIO = 0.6        # turun ke anak yang memuat >=60% teks non-link
-GLOBAL_MIN_DOCS = 3        # baris pendek/label berulang di >=3 dokumen
-SHORT_LINE_WORDS = 8       # "baris pendek" = <=8 kata
+OPTS = {"dateline": True, "drop_title": False}
+
+# Parameter numerik/struktural
+LINK_DENSITY_MAX = 0.55
+PROSE_MIN_WORDS = 6
+DESCEND_RATIO = 0.55
+GLOBAL_MIN_DOCS = 2
+SHORT_LINE_WORDS = 8
 TRACKING_PARAMS = ("utm_", "fbclid", "gclid", "ref", "source")
+SKIP_EXT = (".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx",
+            ".zip", ".rar", ".jpg", ".jpeg", ".png", ".gif", ".mp4", ".mp3")
+
+# Pola sintaksis murni (tanpa daftar kata/frasa hardcode)
+IMG_MD_RE = re.compile(r"!\[[^\]]*\]\([^)]*\)")
+LINK_MD_RE = re.compile(r"\[([^\]]*)\]\([^)]*\)")
+URL_RE = re.compile(
+    r"https?://\S+|www\.\S+|\b[a-z0-9-]+(?:\.[a-z0-9-]+)+\.[a-z]{2,}/\S*", re.I
+)
+QUOTE_RE = re.compile('[“”"«»„]')
+ZERO_WIDTH_RE = re.compile("[\u200b\u200c\u200d\u2060\ufeff\u00ad]")
+
+# Pola struktural pemisah dateline di awal paragraf
+_DL_SEP_RE = re.compile(
+    r"\s*[–—]\s*"                        # en-dash / em-dash (termasuk 'VIVA –melainkan')
+    r"|\s+-\s+"                          # hyphen dengan spasi di kedua sisi
+    r"|\s+-(?=[A-Za-z])"                 # spasi lalu hyphen rapat ('VIVA -melainkan')
+    r"|(?<=[A-Za-z0-9.)])-(?=[A-Z])"     # hyphen rapat sebelum huruf kapital ('Medan-Suasana')
+    r"|:\s+"                             # titik dua diikuti spasi ('Jakarta: Kementerian')
+)
 
 
-# ------------------------------------------------------------- util input
-def read_lines(path: str) -> List[str]:
+# ============================================================= UTIL INPUT/URL
+def read_lines(path: Optional[str]) -> List[str]:
     if not path or not os.path.isfile(path):
         return []
     out = []
@@ -82,7 +122,7 @@ def read_lines(path: str) -> List[str]:
     return out
 
 
-def read_url_list(path: str) -> List[str]:
+def read_url_list(path: Optional[str]) -> List[str]:
     return [u for u in read_lines(path)
             if u.lower() not in ("url", "urls", "link", "links")]
 
@@ -102,14 +142,17 @@ def clean_domain_key(raw: str) -> str:
 
 
 def load_css_paths(path: Optional[str]) -> Dict[str, str]:
-    """Opsional: override manual per domain (CSV ';' url;css_path)."""
     if not path or not os.path.isfile(path):
         return {}
     mapping = {}
     with open(path, "r", encoding="utf-8-sig", newline="") as f:
-        for row in csv.DictReader(f, delimiter=";"):
-            key = clean_domain_key(row.get("url", ""))
-            css = (row.get("css_path") or "").strip().strip('"')
+        first = f.readline()
+        f.seek(0)
+        delim = ";" if ";" in first else ","
+        for row in csv.DictReader(f, delimiter=delim):
+            key = clean_domain_key(row.get("url") or row.get("domain") or "")
+            css = (row.get("css_path") or row.get("csspath")
+                   or row.get("css") or "").strip().strip('"')
             if key and css:
                 mapping[key] = css
     return mapping
@@ -120,20 +163,27 @@ def host_of(url: str) -> str:
 
 
 def site_of(url: str) -> str:
-    """Domain induk: news.detik.com -> detik.com, bekasikab.go.id tetap utuh."""
     labels = host_of(url).split(".")
     if len(labels) >= 3 and len(labels[-1]) == 2 and len(labels[-2]) <= 3:
         return ".".join(labels[-3:])
     return ".".join(labels[-2:])
 
 
-def get_css_for_url(url: str, css_map: Dict[str, str]) -> Optional[str]:
-    parts = host_of(url).split(".")
+def get_css_for_url(url: str, css_map: Dict[str, str]) -> Tuple[Optional[str], str]:
+    if not css_map:
+        return None, "none"
+    h = host_of(url)
+    if h in css_map:
+        return css_map[h], "exact"
+    s = site_of(url)
+    if s in css_map:
+        return css_map[s], "site"
+    parts = h.split(".")
     for i in range(len(parts) - 1):
         key = ".".join(parts[i:])
         if key in css_map:
-            return css_map[key]
-    return None
+            return css_map[key], "suffix"
+    return None, "not_defined"
 
 
 def host_in(url: str, domains: List[str]) -> bool:
@@ -148,19 +198,26 @@ def normalize_url(url: str) -> str:
     return f"{host_of(url)}{p.path.rstrip('/')}?{urlencode(q)}".rstrip("?")
 
 
-# -------------------------------------------------------- Google News RSS
-SKIP_EXT = (".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx",
-            ".zip", ".rar", ".jpg", ".jpeg", ".png", ".gif", ".mp4", ".mp3")
+def split_selectors(sel: str) -> List[str]:
+    parts, depth, cur = [], 0, ""
+    for ch in sel:
+        if ch in "([":
+            depth += 1
+        elif ch in ")]":
+            depth -= 1
+        if ch == "," and depth == 0:
+            parts.append(cur.strip())
+            cur = ""
+        else:
+            cur += ch
+    if cur.strip():
+        parts.append(cur.strip())
+    return [p for p in parts if p]
 
 
+# ====================================================== GOOGLE DORKING & RSS
 def expand_queries(keywords: List[str], templates: List[str],
                    whens: List[str]) -> List[Dict]:
-    """
-    keyword x template dork x kondisi waktu.
-      template : '"{kw}" site:go.id'   ({kw} diganti keyword)
-      when     : '10d' | '30d' | 'none'  (none = tanpa batas waktu)
-    Template yang sudah memuat 'when:' dipakai apa adanya.
-    """
     out, seen = [], set()
     for kw in keywords:
         for tpl in templates:
@@ -188,91 +245,146 @@ def is_gnews(url: str) -> bool:
 
 
 def decode_gnews(url: str) -> Optional[str]:
-    """
-    Dekode link Google News ke URL asli TANPA browser (lebih stabil daripada
-    menunggu redirect JS). Opsional: pip install googlenewsdecoder.
-    Mengembalikan None bila library tidak ada / gagal -> pakai redirect browser.
-    """
     try:
         from googlenewsdecoder import gnewsdecoder
-    except ImportError:
-        return None
-    try:
         res = gnewsdecoder(url, interval=1)
-        if isinstance(res, dict) and res.get("status") and res.get("decoded_url"):
+        if isinstance(res, dict) and res.get("decoded_url"):
             return res["decoded_url"]
     except Exception:
         pass
     return None
 
 
-def fetch_gnews_links(query: str, hl: str, gl: str, limit: int) -> List[str]:
+def fetch_gnews_items(query: str, hl: str, gl: str, limit: int) -> List[Dict]:
     try:
         r = requests.get(gnews_rss_url(query, hl, gl),
                          headers={"User-Agent": UA}, timeout=20)
         r.raise_for_status()
         root = ET.fromstring(r.content)
-        links = [it.findtext("link") for it in root.iter("item")]
-        return [l for l in links if l][:limit]
+        items = []
+        for it in root.iter("item"):
+            link = it.findtext("link")
+            if not link:
+                continue
+            src = it.find("source")
+            src_url = src.get("url", "") if src is not None else ""
+            items.append({"link": link, "source": host_of(src_url) if src_url else ""})
+        return items[:limit]
     except Exception as e:
-        print(f"    [!] Gagal ambil RSS untuk {query!r}: {e}")
+        print(f"    [!] Gagal ambil Google News RSS untuk {query!r}: {e}")
         return []
 
 
-def fetch_brave_links(item: Dict, hl: str, gl: str, limit: int,
-                      api_key: str) -> List[str]:
-    """
-    Pencarian web (termasuk situs non-berita) lewat Brave Search API.
-    Mendukung operator site:/intitle:/inurl:. 'when' dipetakan ke 'freshness'
-    berupa rentang tanggal. Perlu BRAVE_API_KEY (lihat brave.com/search/api).
-    """
-    params = {"q": item["q"], "country": gl.upper(), "search_lang": hl.lower(),
-              "count": min(limit, 20)}
-    m = re.fullmatch(r"(\d+)d", item["when"] or "")
-    if m:
-        end = date.today()
-        params["freshness"] = f"{end - timedelta(days=int(m.group(1)))}to{end}"
-    try:
-        r = requests.get("https://api.search.brave.com/res/v1/web/search",
-                         params=params, timeout=20,
-                         headers={"X-Subscription-Token": api_key,
-                                  "Accept": "application/json",
-                                  "User-Agent": UA})
-        r.raise_for_status()
-        results = r.json().get("web", {}).get("results", [])
-        return [x["url"] for x in results if x.get("url")][:limit]
-    except Exception as e:
-        print(f"    [!] Brave gagal untuk {item['q']!r}: {e}")
-        return []
+def pick_diverse(urls: List[str], source_of: Dict[str, str], limit: int) -> List[str]:
+    if not limit or len(urls) <= limit:
+        return urls
+    groups: Dict[str, List[str]] = {}
+    for u in urls:
+        groups.setdefault(source_of.get(u) or host_of(u) or "?", []).append(u)
+    picked: List[str] = []
+    while len(picked) < limit and any(groups.values()):
+        for g in list(groups):
+            if groups[g] and len(picked) < limit:
+                picked.append(groups[g].pop(0))
+    return picked
 
 
-# ============================================================ HTML -> teks
+# ====================================================== PEMBERSIHAN DOM OTOMATIS
+def _text_len(el) -> int:
+    return len(el.get_text(" ", strip=True))
+
+
+def _gone(el) -> bool:
+    return bool(getattr(el, "decomposed", False))
+
+
+ORPHAN_BLOCK_TAGS = {"div", "section", "ul", "ol", "li", "p", "h2", "h3", "h4"}
+
+
+def _kill(el):
+    """Buang elemen blok; bila induk bloknya tinggal label yatim pendek (<40 char), buang juga."""
+    parent = el.parent
+    el.decompose()
+    for _ in range(3):
+        if parent is None or parent.name in (None, "body", "html", "[document]"):
+            break
+        if parent.name in ORPHAN_BLOCK_TAGS and _text_len(parent) < 40:
+            nxt = parent.parent
+            parent.decompose()
+            parent = nxt
+        else:
+            break
+
+
 def prune_html(html: str) -> BeautifulSoup:
-    """Buang tag non-konten standar + blok berkepadatan link tinggi."""
     soup = BeautifulSoup(html, "html.parser")
-    for t in soup(NON_CONTENT_TAGS):
-        t.decompose()
 
-    # drop-cap: <span>S</span>ebagai -> Sebagai (huruf awal tidak boleh hilang)
+    # 1. Hapus tag media/script standar HTML5
+    for t in soup(HTML_NON_TEXT_TAGS):
+        t.decompose()
+    for sm in soup.find_all("small"):
+        if _text_len(sm) < 200:
+            sm.decompose()
+
+    total = max(1, _text_len(soup))
+
+    # 2. Tag layout & tabel: bila membungkus mayoritas teks (>40%) -> unwrap,
+    #    ATAU bila <header> berisi judul utama <h1> -> unwrap agar <h1> tidak hilang!
+    for t in soup.find_all(HTML_LAYOUT_TAGS + ["table"]):
+        if _gone(t):
+            continue
+        has_main_h1 = (t.name == "header" and t.find("h1") is not None
+                       and _text_len(t.find("h1")) >= 15)
+        if _text_len(t) > 0.4 * total or has_main_h1:
+            for sub in t.find_all(["thead", "tbody", "tfoot", "tr", "td", "th"]):
+                sub.unwrap()
+            t.unwrap()
+        else:
+            t.decompose()
+
+    # 3. Deteksi struktural HANYA pada elemen BLOK (div, section, ul, ol, li, p).
+    #    Jangan masukkan 'span', 'a', 'strong', 'em' agar link inline di dalam
+    #    kalimat seperti "Kementerian Sosial (<a>Kemensos</a>)" tidak ikut terhapus!
+    for el in reversed(soup.find_all(["div", "ul", "ol", "section", "li", "p"])):
+        if _gone(el):
+            continue
+        # Jangan pernah menghapus blok yang membungkus judul <h1>
+        if el.find("h1") is not None:
+            continue
+
+        txt = el.get_text(" ", strip=True)
+        text_total = len(txt)
+        if text_total == 0:
+            el.decompose()
+            continue
+
+        link_len = sum(len(a.get_text(" ", strip=True)) for a in el.find_all("a"))
+        if link_len > 0:
+            nonlink = text_total - link_len
+            if (link_len / text_total > LINK_DENSITY_MAX) or (nonlink <= 25 and text_total < 160):
+                _kill(el)
+                continue
+
+        # Kontainer sisipan pendek (<120 char) yang tidak memiliki tanda baca kalimat (.!?)
+        if el.name in ("div", "section", "li") and text_total < 120:
+            if not re.search(r"[.!?…][\"”’)\]]*$", txt):
+                _kill(el)
+                continue
+
+        # Paragraf/blok pendek (<120 char) dengan pola metadata "Label: Nilai" tanpa titik akhir kalimat
+        if text_total < 120 and re.match(r"^[^.!?]{1,25}:\s+\S+", txt) and not re.search(r"[.!?…][\"”’)\]]*$", txt):
+            _kill(el)
+
+    # 4. Perbaiki drop-cap: <span>S</span>ebagai -> Sebagai
     for tag in soup.find_all(["span", "strong", "b", "i", "em", "font", "big", "a"]):
         t = tag.get_text(strip=True)
         nxt = tag.next_sibling
-        if len(t) == 1 and t.isalpha() and isinstance(nxt, NavigableString) \
-                and nxt[:1].islower():
+        if len(t) == 1 and t.isalpha() and isinstance(nxt, NavigableString) and nxt[:1].islower():
             tag.replace_with(t)
 
-    # dari yang terdalam ke terluar
-    for el in reversed(soup.find_all(["div", "ul", "ol", "section",
-                                      "table", "li", "p"])):
-        if getattr(el, "decomposed", False):
-            continue
-        total = len(el.get_text(" ", strip=True))
-        if total == 0:
-            el.decompose()
-            continue
-        link = sum(len(a.get_text(" ", strip=True)) for a in el.find_all("a"))
-        if link / total > LINK_DENSITY_MAX:
-            el.decompose()
+    # 5. Hapus tag gambar
+    for img in soup.find_all("img"):
+        img.decompose()
     return soup
 
 
@@ -284,232 +396,319 @@ def html_to_markdown(html: str) -> str:
                       strip=["a", "img"])
 
 
-def extract_inner_html(page, css_selector: str) -> str:
-    """innerHTML elemen yang cocok (tanpa elemen bersarang di elemen cocok lain)."""
-    htmls = page.eval_on_selector_all(
-        css_selector,
-        """els => els
-            .filter(e => !els.some(o => o !== e && o.contains(e)))
-            .map(e => e.innerHTML)
-            .filter(h => h && h.trim().length > 0)""",
-    )
-    return "\n\n".join(htmls)
+# ====================================================== PEMBERSIHAN TEKS OTOMATIS
+def _strip_inline_md(s: str) -> str:
+    """Bersihkan simbol bold/italic/code markdown & kurung kosong."""
+    s = re.sub(r"\\([*_`~\[\]()#+\-.!])", r"\1", s)
+    s = re.sub(r"\*{1,3}(.+?)\*{1,3}", r"\1", s)
+    s = re.sub(r"(?<!\w)_{1,3}(.+?)_{1,3}(?!\w)", r"\1", s)
+    s = s.replace("`", "")
+    s = re.sub(r"\s*\(\s*\)", "", s)
+    return re.sub(r"[ \t]{2,}", " ", s).strip()
 
 
-# Tanpa selector: mulai dari <body>, turun ke anak yang memuat mayoritas teks
-# non-link. Berhenti saat tidak ada anak yang dominan = kontainer artikel.
-DENSE_BLOCK_JS = """
-(ratio) => {
-  const skip = new Set(['SCRIPT','STYLE','NOSCRIPT','NAV','FOOTER','ASIDE','IFRAME','SVG','FORM']);
-  const score = e => {
-    const t = (e.innerText || '').trim().length;
-    let l = 0;
-    e.querySelectorAll('a').forEach(a => l += (a.innerText || '').trim().length);
-    return t - l;  // teks non-link
-  };
-  let cur = document.body;
-  while (true) {
-    const cs = score(cur);
-    let best = null, bs = 0;
-    for (const k of cur.children) {
-      if (skip.has(k.tagName.toUpperCase())) continue;
-      const s = score(k);
-      if (s > bs) { bs = s; best = k; }
-    }
-    if (best && bs >= ratio * cs) cur = best; else break;
-  }
-  return cur.innerHTML;
-}
-"""
-
-
-def trafilatura_extract(html: str, url: str, precision: bool) -> str:
-    if trafilatura is None or not html:
-        return ""
-    out = trafilatura.extract(
-        html, url=url, output_format="markdown", include_links=False,
-        include_images=False, include_tables=False, include_comments=False,
-        favor_precision=precision, favor_recall=not precision,
-        deduplicate=True,
-    )
-    return (out or "").strip()
-
-
-# ========================================================= pembersihan teks
 def _plain(line: str) -> str:
-    return re.sub(r"^[\s#>*_\-•]+|[\s*_]+$", "", line).strip()
+    s = re.sub(r"^[\s#>_\-*•]+|[\s_*]+$", "", line).strip()
+    return _strip_inline_md(s)
 
 
 def _norm(line: str, mask_digits: bool = True) -> str:
-    """Normalisasi untuk membandingkan baris: huruf kecil, (opsional) angka -> #."""
     n = re.sub(r"\s+", " ", _plain(line).lower())
     return re.sub(r"\d+", "#", n) if mask_digits else n
 
 
 def is_prose(line: str) -> bool:
-    s = line.strip()
+    s = _strip_inline_md(line.strip())
     return (len(s.split()) >= PROSE_MIN_WORDS
             and re.search(r"[.!?…][\"”’)\]]*$", s) is not None)
 
 
+def _is_italic_para(line: str) -> bool:
+    s = line.strip()
+    if len(s) <= 2:
+        return False
+    return ((s.startswith("*") and s.endswith("*") and not s.startswith("**"))
+            or (s.startswith("_") and s.endswith("_") and not s.startswith("__")))
+
+
+def _is_label(line: str) -> bool:
+    t = _plain(line)
+    return (0 < len(t) <= 35 and len(t.split()) <= 4
+            and not re.match(r"^[#>*\-•\d|]", line.strip())
+            and not re.search(r"[.!?:;,]", t))
+
+
 def cut_label_tail(line: str) -> str:
-    """
-    Potong ekor berlabel yang menempel di akhir kalimat tanpa tanda baca,
-    mis. '...pendidikan.Reporter : A Editor : B'.
-    """
+    """Potong ekor metadata yang menempel di akhir paragraf ('...pendidikan. Reporter : A')."""
     ends = list(re.finditer(r"[.!?…][\"”’)\]]*(?=\s|$)", line))
     if not ends:
         return line
     cut = ends[-1].end()
     tail = line[cut:].strip()
-    if tail and len(tail) < 150 and ":" in tail \
-            and not re.search(r"[.!?…]", tail):
+    if tail and len(tail) < 150 and ":" in tail and not re.search(r"[.!?…]", tail):
         return line[:cut]
     return line
 
 
+def strip_dateline(line: str) -> str:
+    """
+    Potong dateline pembuka secara struktural tanpa daftar nama kota/media hardcode.
+    """
+    clean_line = _strip_inline_md(line)
+    for m in _DL_SEP_RE.finditer(clean_line[:95]):
+        pre = clean_line[:m.start()].strip()
+        sep = m.group().strip()
+        rest = clean_line[m.end():].strip()
+
+        words = pre.split()
+        if not (1 <= len(words) <= 7) or len(rest) < 25:
+            continue
+
+        has_domain = re.search(r"\b[a-z0-9-]+\.(com|id|co\.id|net|org|go\.id|tv|news)\b", pre, re.I) is not None
+        if re.search(r"[!?]|\.\s+[A-Z]", pre) and not has_domain:
+            continue
+
+        alpha_only = re.sub(r"[^A-Za-z]", "", pre)
+        is_all_caps = bool(alpha_only) and alpha_only.isupper()
+
+        is_title_case = all(
+            w.strip("(),.")[:1].isupper() or w.lower() in ("di", "dan", "of")
+            for w in words if w.strip("(),.")
+        )
+        has_comma = "," in pre
+
+        if not (is_all_caps or has_domain or is_title_case):
+            continue
+
+        if sep == ":":
+            if len(words) > 3:
+                continue
+        elif sep == "-" and m.group() == "-":
+            if not has_comma and len(words) < 2 and not is_all_caps and not has_domain:
+                continue
+
+        strong_signal = is_all_caps or has_comma or has_domain or sep in ("–", "—")
+        if rest[:1].isupper() or rest[:1] in '“"(\'' or (strong_signal and rest[:1].islower()):
+            return rest
+
+    return line
+
+
+def drop_line(s: str) -> bool:
+    """Deteksi baris sampah/instruksi UI/metadata secara struktural tanpa kosakata hardcode."""
+    if s.startswith("|"):
+        return True
+    if URL_RE.search(s):
+        return True
+    if not re.search(r"[A-Za-z]", s):
+        return True
+
+    # Jangan buang baris heading markdown (# Judul)
+    if s.lstrip().startswith("#"):
+        return False
+
+    p = _plain(s)
+    words = p.split()
+    alpha = re.sub(r"[^A-Za-z]", "", p)
+    is_list = re.match(r"^\s*(-|\*|\d+[.)]|[A-Z][.)])\s+", s) is not None
+    ends_with_punct = re.search(r"[.!?…][\"”’)\]]*$", p) is not None
+
+    # 1. Baris ALL-CAPS (seluruhnya huruf besar, mis. "GULIR UNTUK LANJUT BACA")
+    #    yang tidak diakhiri tanda titik kalimat dan <= 10 kata
+    if alpha and alpha.isupper() and len(words) <= 10 and not ends_with_punct:
+        return True
+
+    # 2. Pola atribut metadata pendek: "Label: Nilai" (<= 12 kata dan tidak diakhiri titik kalimat)
+    #    Jika kata sebelum ':' pendek (1-2 kata, seperti 'Foto:', 'Editor:'), buang.
+    #    Judul yang memakai ':' biasanya punya >2 kata atau huruf besar/kecil naratif.
+    if len(words) <= 12 and re.match(r"^[A-Za-z\s/]{2,18}\s*:\s*\S+", p):
+        label_part = p.split(":", 1)[0].strip()
+        if len(label_part.split()) <= 2 and (len(words) <= 6 or not ends_with_punct):
+            return True
+
+    # 3. Pola kredit/atribut di ujung baris pendek, misal "... (Foto: Istimewa)"
+    if len(p) < 260 and re.search(r"(\([A-Za-z\s]{2,15}:\s*[^)]+\)|\b[A-Za-z]{3,12}\s*:\s*\S+(?:\s+\S+){0,3})\.?\s*$", p):
+        if not is_prose(p) or len(words) < 18:
+            return True
+
+    # 4. Baris pendek (<= 5 kata) yang bukan heading/list dan tidak memiliki tanda akhir kalimat (.!?)
+    if len(words) <= 5 and not is_list and not ends_with_punct:
+        return True
+
+    return False
+
+
+def cut_footer_run(lines: List[str]) -> List[str]:
+    """Potong ekor artikel yang berisi deretan label pendek/tanda tangan penulis."""
+    total = sum(len(l) for l in lines)
+    if not total:
+        return lines
+    acc = 0
+    for i, l in enumerate(lines):
+        nxt = lines[i + 1] if i + 1 < len(lines) else None
+        after = sum(len(x) for x in lines[i:])
+        if _is_label(l):
+            if nxt is not None and _is_label(nxt) and acc >= 0.5 * total and after <= max(0.3 * total, 220):
+                return lines[:i]
+            if acc >= 0.6 * total and after <= max(0.15 * total, 180) and len(lines) - i <= 3:
+                return lines[:i]
+        acc += len(l)
+    return lines
+
+
 def trim_to_prose_span(lines: List[str]) -> List[str]:
-    """Simpan dari kalimat pertama sampai kalimat terakhir (+ judul di atasnya)."""
     idx = [i for i, l in enumerate(lines) if is_prose(l)]
     if not idx:
         return lines
     first, last = idx[0], idx[-1]
-    head, seen = None, 0
-    for j in range(first - 1, -1, -1):
-        if not lines[j].strip():
-            continue
-        seen += 1
-        if lines[j].lstrip().startswith("#"):
-            head = lines[j]
-            break
-        if seen >= 6:
-            break
-    return ([head, ""] if head else []) + lines[first:last + 1]
+    head = None
+    if not OPTS["drop_title"]:
+        for j in range(first - 1, max(first - 7, -1), -1):
+            if lines[j].lstrip().startswith("#"):
+                head = lines[j]
+                break
+    return ([head] if head else []) + lines[first:last + 1]
 
 
-def structural_clean(text: str) -> str:
-    """Pembersihan per dokumen (tanpa daftar frasa)."""
-    if not text:
+def attach_headline(text: str, headline: str) -> str:
+    """
+    Pastikan judul artikel (<h1>) berada di baris paling atas artikel
+    (kecuali --drop-title aktif), tanpa menduplikasi jika sudah ada.
+    """
+    if OPTS["drop_title"] or not headline or not text:
+        return text
+    clean_hl = _plain(headline)
+    if len(clean_hl.split()) < 3:
+        return text
+
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    if not lines:
+        return text
+
+    # Cek apakah baris ke-1 atau ke-2 sudah sama dengan judul
+    norm_hl = re.sub(r"[^a-z0-9]", "", clean_hl.lower())
+    for i in range(min(2, len(lines))):
+        norm_line = re.sub(r"[^a-z0-9]", "", _plain(lines[i]).lower())
+        if norm_hl and (norm_hl == norm_line or norm_hl in norm_line or norm_line in norm_hl):
+            # Jika baris pertama sudah berupa judul, pastikan bentuknya bersih
+            lines[i] = clean_hl
+            return "\n\n".join(lines)
+
+    return clean_hl + "\n\n" + "\n\n".join(lines)
+
+
+def clean_markdown(md: str, headline: str = "") -> str:
+    """Markdown mentah -> artikel bersih secara struktural."""
+    if not md:
         return ""
-    # kalimat yang menempel: 'perkembangan.Komitmen' -> 'perkembangan. Komitmen'
-    text = re.sub(r"([a-z0-9\)”\"’][.!?])([A-Z“])", r"\1 \2", text)
-    lines = [cut_label_tail(l.rstrip()) for l in text.split("\n")]
+    md = ZERO_WIDTH_RE.sub("", md).replace("\u00a0", " ")
+    md = IMG_MD_RE.sub("", md)
+    md = LINK_MD_RE.sub(r"\1", md)
+    md = re.sub(r"([a-z0-9\)”\"’][.!?])([A-Z“])", r"\1 \2", md)
+
+    lines = []
+    for raw in md.split("\n"):
+        s = raw.strip()
+        if not s:
+            continue
+        s = cut_label_tail(s)
+        if drop_line(s):
+            continue
+        lines.append(s)
+
+    # Buang paragraf miring penuh di tepi atas/bawah (catatan redaksi/disclaimer)
+    edge = set(range(min(3, len(lines)))) | set(range(max(0, len(lines) - 5), len(lines)))
+    lines = [l for i, l in enumerate(lines) if not (i in edge and _is_italic_para(l))]
+
+    lines = cut_footer_run(lines)
     lines = trim_to_prose_span(lines)
 
     seen, out = set(), []
-    for l in lines:  # buang baris duplikat persis (judul 2x, dst)
+    for l in lines:
         key = _norm(l, mask_digits=False)
         if len(key) > 20 and key in seen:
             continue
         if key:
             seen.add(key)
         out.append(l)
-    return re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip()
+
+    # Potong dateline pada awal artikel (cek hingga 2 paragraf prose pertama)
+    if OPTS["dateline"]:
+        prose_checked = 0
+        for i, l in enumerate(out):
+            if l.lstrip().startswith("#"):
+                continue
+            if is_prose(l) or i < 2:
+                out[i] = strip_dateline(l)
+                if is_prose(out[i]):
+                    prose_checked += 1
+                if prose_checked >= 2:
+                    break
+
+    res = "\n\n".join(out).strip()
+    return attach_headline(res, headline)
 
 
-# ---- pemoles akhir: teks polos, tanpa link/kutip/sisa footer
-MD_LINK_RE = re.compile(r"\[([^\]]*)\]\([^)]*\)")
-URL_RE = re.compile(
-    r"https?://\S+|www\.\S+|\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,}/\S*", re.I)
-QUOTE_CHARS_RE = re.compile('[“”"«»„]')
-
-
-def _is_italic_para(line: str) -> bool:
-    s_ = line.strip()
-    return (len(s_) > 2
-            and re.match(r"^(\*(?!\*)|_(?!_))", s_) is not None
-            and re.search(r"(?<!\*)\*$|(?<!_)_$", s_) is not None)
-
-
-def _is_label(line: str) -> bool:
-    """Label pendek polos (News, Travel): <=3 kata, tanpa tanda baca/bullet."""
-    t = line.strip()
-    return (0 < len(t) <= 30 and len(t.split()) <= 3
-            and not re.match(r"^[#>*\-•\d]", t)
-            and not re.search(r"[.!?:;,]", t))
-
-
-def cut_footer_run(lines: List[str]) -> List[str]:
-    """
-    Potong footer di akhir artikel:
-      - rangkaian >=2 label pendek berurutan (News, Travel) di paruh akhir
-      - atau satu label pendek dengan sisa sangat kecil (<=15%, <=2 baris)
-    Notifikasi/ajakan yang menyusul setelah label ikut terpotong.
-    """
-    idx = [i for i, l in enumerate(lines) if l.strip()]
-    total = sum(len(lines[i]) for i in idx)
-    if not total:
-        return lines
-    acc = 0
-    for pos, i in enumerate(idx):
-        nxt = idx[pos + 1] if pos + 1 < len(idx) else None
-        after = sum(len(lines[j]) for j in idx[pos:])
-        if _is_label(lines[i]):
-            if nxt is not None and _is_label(lines[nxt]) \
-                    and acc >= 0.5 * total and after <= 0.3 * total:
-                return lines[:i]
-            if acc >= 0.6 * total and after <= 0.15 * total \
-                    and len(idx) - pos <= 3:
-                return lines[:i]
-        acc += len(lines[i])
-    return lines
-
-
-def final_polish(text: str, strip_quotes: bool = True) -> str:
-    """Isi artikel saja: tanpa link, paragraf promo, footer, markup, kutip."""
-    if not text:
-        return ""
-    lines = [MD_LINK_RE.sub(r"\1", l) for l in text.split("\n")]
-
-    # paragraf yang seluruhnya miring di tepi dokumen = catatan/ajakan redaksi
-    idx = [i for i, l in enumerate(lines) if l.strip()]
-    edge = set(idx[:3] + idx[-5:])
-    lines = ["" if (i in edge and _is_italic_para(l)) else l
-             for i, l in enumerate(lines)]
-
-    # baris yang memuat URL = promo/rujukan, bukan isi
-    lines = ["" if URL_RE.search(l) else l for l in lines]
-
-    lines = cut_footer_run(lines)
-    lines = trim_to_prose_span(lines)
-
+def final_polish(text: str, headline: str = "", strip_quotes: bool = True) -> str:
+    """Hasilkan teks polos bersih, pertahankan judul <h1> di baris pertama, & potong dateline."""
     out = []
-    for l in lines:
-        l = re.sub(r"^\s{0,3}#{1,6}\s*", "", l)                      # heading
-        l = re.sub(r"^\s*>\s?", "", l)                               # blockquote
-        l = re.sub(r"\*\*(.+?)\*\*", r"\1", l)                       # tebal
-        l = re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])", r"\1", l)
-        l = re.sub(r"(?<!\w)_(?!\s)(.+?)(?<!\s)_(?!\w)", r"\1", l)  # miring
-        l = l.replace("`", "")
+    text = ZERO_WIDTH_RE.sub("", text or "").replace("\u00a0", " ")
+    norm_hl = re.sub(r"[^a-z0-9]", "", _plain(headline).lower()) if headline else ""
+
+    for idx, l in enumerate(text.split("\n")):
+        l = l.strip()
+        if not l:
+            continue
+        is_heading = l.lstrip().startswith("#")
+        l = re.sub(r"^\s{0,3}#{1,6}\s*", "", l)
+        l = re.sub(r"^\s*>\s?", "", l)
+        l = _strip_inline_md(l)
         if strip_quotes:
-            l = QUOTE_CHARS_RE.sub("", l)
-        out.append(re.sub(r"[ \t]{2,}", " ", l).rstrip())
-    return re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip()
+            l = QUOTE_RE.sub("", l)
+        l = re.sub(r"[ \t]{2,}", " ", l).strip()
+        if not l:
+            continue
+
+        # Jangan buang baris pertama jika itu adalah judul artikel (headline)
+        norm_l = re.sub(r"[^a-z0-9]", "", l.lower())
+        is_title_line = is_heading or (idx == 0 and norm_hl and (norm_hl == norm_l or norm_hl in norm_l))
+        if not is_title_line and drop_line(l):
+            continue
+        out.append(l)
+
+    # Pastikan dateline pada paragraf pertama setelah judul ikut terpotong
+    if OPTS["dateline"]:
+        prose_checked = 0
+        for i, l in enumerate(out):
+            norm_l = re.sub(r"[^a-z0-9]", "", l.lower())
+            if i == 0 and norm_hl and (norm_hl == norm_l or norm_hl in norm_l):
+                continue  # Jangan potong judul artikel (misal 'Gus Ipul di ...: Wartawan ...')
+            out[i] = strip_dateline(l)
+            prose_checked += 1
+            if prose_checked >= 2:
+                break
+
+    res = "\n\n".join(out).strip()
+    return attach_headline(res, QUOTE_RE.sub("", headline) if strip_quotes else headline)
 
 
-def quality_flags(text: str) -> str:
-    """Penanda mutu untuk ditinjau manual (tidak mengubah isi)."""
+def quality_flags(text: str, headline: str = "") -> str:
     flags = []
-    lines = [l.strip() for l in text.split("\n") if l.strip()][:3]
-    for l in lines:
+    norm_hl = re.sub(r"[^a-z0-9]", "", _plain(headline).lower()) if headline else ""
+    for l in [x.strip() for x in text.split("\n") if x.strip()][:3]:
+        norm_l = re.sub(r"[^a-z0-9]", "", l.lower())
+        if norm_hl and norm_l == norm_hl:
+            continue
         if len(l) < 40:
             continue
-        m = re.match(r"^[^.!?]{0,80}?\s[-–—]\s+(?=\S)", l)
-        rest = l[m.end():] if m else l
-        if rest[:1].islower():
-            flags.append("lowercase_start")  # mis. huruf awal drop-cap hilang
+        if l[:1].islower():
+            flags.append("lowercase_start")
             break
     return ",".join(flags)
 
 
-# ---- pembersihan lintas dokumen: baris yang berulang = boilerplate
+# ---- Pembersihan Lintas Dokumen: Baris Berulang = Boilerplate
 def line_key(line: str) -> tuple:
-    """
-    Kunci kemiripan baris:
-      L = 'label : isi'  (Editor : X, Foto : Y)  -> kunci = labelnya
-      S = baris pendek (<=8 kata)                -> kunci = isi baris
-      D = baris panjang                          -> kunci = isi baris
-    """
     n = _norm(line)
     if ":" in n[:25]:
         label, rest = n.split(":", 1)
@@ -521,16 +720,9 @@ def line_key(line: str) -> tuple:
 
 
 def corpus_clean(results: List[Dict]) -> Tuple[int, int]:
-    """
-    Buang baris yang muncul di banyak dokumen:
-      - per situs : ada di >=50% dokumen situs itu (minimal 2 dokumen)
-      - global    : label/baris pendek ada di >=3 dokumen (atau 10% korpus)
-    Mengembalikan (baris dibuang, dokumen yang dilindungi dari over-removal).
-    """
     docs = [r for r in results if r["content"]]
     if len(docs) < 2:
         return 0, 0
-
     n_docs = len(docs)
     site_docs = Counter(site_of(r["final_url"]) for r in docs)
     global_counts: Counter = Counter()
@@ -556,8 +748,7 @@ def corpus_clean(results: List[Dict]) -> Tuple[int, int]:
                 dropped += 1
                 continue
             kept.append(l)
-        cleaned = structural_clean("\n".join(kept))
-        # pengaman: bila >70% isi hilang, anggap over-removal -> pertahankan
+        cleaned = clean_markdown("\n".join(kept), headline=r.get("title", ""))
         if len(cleaned) < 0.3 * len(r["content"]):
             protected += 1
             continue
@@ -566,42 +757,178 @@ def corpus_clean(results: List[Dict]) -> Tuple[int, int]:
     return removed, protected
 
 
-# ====================================================== ekstraksi per halaman
-def extract_content(page, final_url, css_map, min_chars) -> Tuple[str, str]:
-    def finish(html_or_md: str, is_html: bool) -> str:
-        md = html_to_markdown(html_or_md) if is_html else html_or_md
-        return structural_clean(md)
+# ====================================================== EKSTRAKSI PER HALAMAN
+# Ekstraksi Judul Artikel (Headline <h1>) secara otomatis dari DOM Visual + JSON-LD + Meta
+EXTRACT_HEADLINE_JS = r"""
+() => {
+  // 1. Cari elemen <h1> di halaman yang bukan bagian dari nav/footer/aside
+  const h1s = Array.from(document.querySelectorAll('h1'));
+  let bestText = '';
+  let bestScore = -1;
 
-    # 0. override manual (opsional)
-    css = get_css_for_url(final_url, css_map) if css_map else None
-    if css:
-        try:
-            text = finish(extract_inner_html(page, css), True)
-            if len(text) >= min_chars:
-                return text, f"css:{css}"
-        except Exception:
-            pass
+  for (const h of h1s) {
+    if (h.closest('nav, footer, aside')) continue;
+    const txt = (h.innerText || h.textContent || '').replace(/\s+/g, ' ').trim();
+    if (txt.length < 15 || txt.split(' ').length < 3) continue;
 
-    # 1. Trafilatura: precision dulu, lalu recall
-    html = str(prune_html(page.content()))  # buang blok penuh-link (Baca juga, dst)
-    for precision in (True, False):
-        text = finish(trafilatura_extract(html, final_url, precision), False)
-        if len(text) >= min_chars:
-            return text, "trafilatura-" + ("precision" if precision else "recall")
+    const rect = h.getBoundingClientRect();
+    const style = window.getComputedStyle(h);
+    if (style.display === 'none' || style.visibility === 'hidden') continue;
 
-    # 2. blok terpadat otomatis
+    const fontSize = parseFloat(style.fontSize) || 20;
+    const inArticle = h.closest('article, main, [role="main"]') ? 1.5 : 1.0;
+    // Skor gabungan: ukuran font + panjang judul wajar + posisi di dalam article/main
+    const score = fontSize * inArticle * Math.min(txt.length, 140);
+    if (score > bestScore) {
+      bestScore = score;
+      bestText = txt;
+    }
+  }
+  if (bestText) return bestText;
+
+  // 2. Cadangan: JSON-LD headline (standar Schema.org NewsArticle/Article)
+  for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+    try {
+      const data = JSON.parse(s.textContent);
+      const items = Array.isArray(data) ? data : (data['@graph'] || [data]);
+      for (const it of items) {
+        if (it && typeof it.headline === 'string' && it.headline.trim().length >= 15) {
+          return it.headline.replace(/\s+/g, ' ').trim();
+        }
+      }
+    } catch (e) {}
+  }
+
+  // 3. Cadangan: og:title / twitter:title (dipotong nama situs di ujungnya bila ada)
+  const og = document.querySelector('meta[property="og:title"], meta[name="twitter:title"]');
+  if (og && og.content) {
+    return og.content.replace(/\s+[-|–—]\s+[^-|–—]{2,35}$/, '').trim();
+  }
+  return '';
+}
+"""
+
+EXTRACT_INNER_HTML_JS = r"""
+(css) => {
+  const els = Array.from(document.querySelectorAll(css));
+  if (!els.length) return '';
+  const top = els.filter(e => !els.some(o => o !== e && o.contains(e)));
+  return top.map(e => e.innerHTML).join('\n\n');
+}
+"""
+
+DENSE_BLOCK_JS = r"""
+(ratio) => {
+  const skip = new Set(['SCRIPT','STYLE','NOSCRIPT','NAV','FOOTER','ASIDE','HEADER','IFRAME','SVG','FORM']);
+  const score = e => {
+    const t = (e.innerText || '').trim().length;
+    if (!t) return 0;
+    let l = 0;
+    e.querySelectorAll('a').forEach(a => l += (a.innerText || '').trim().length);
+    const pCount = e.querySelectorAll('p').length;
+    const nonLink = Math.max(0, t - l);
+    return nonLink * (1 + Math.min(pCount, 15) * 0.08);
+  };
+  let cur = document.body;
+  while (cur && cur.children) {
+    const cs = score(cur);
+    let best = null, bs = 0;
+    for (const k of cur.children) {
+      if (skip.has(k.tagName.toUpperCase())) continue;
+      const s = score(k);
+      if (s > bs) { bs = s; best = k; }
+    }
+    if (best && bs >= ratio * cs) cur = best; else break;
+  }
+  return cur ? cur.innerHTML : '';
+}
+"""
+
+
+def extract_headline(page) -> str:
+    """Ambil judul artikel (<h1>) dari DOM, bukan sekadar <title> tab browser."""
     try:
-        text = finish(page.evaluate(DENSE_BLOCK_JS, DESCEND_RATIO), True)
+        hl = page.evaluate(EXTRACT_HEADLINE_JS)
+        if hl and isinstance(hl, str) and len(hl.strip()) >= 10:
+            return _strip_inline_md(hl.strip())
+    except Exception:
+        pass
+    # Fallback ke page.title() yang dibersihkan dari nama portal di belakang
+    try:
+        raw_title = (page.title() or "").strip()
+        return re.sub(r"\s+[-|–—]\s+[^-|–—]{2,35}$", "", raw_title).strip()
+    except Exception:
+        return ""
+
+
+def trafilatura_extract(html: str, url: str) -> str:
+    if trafilatura is None or not html:
+        return ""
+    try:
+        out = trafilatura.extract(
+            html, url=url, output_format="markdown", include_links=False,
+            include_images=False, include_tables=False, include_comments=False,
+            favor_precision=True, deduplicate=True)
+        return (out or "").strip()
+    except Exception:
+        return ""
+
+
+def try_selectors(page, selector_list: str, min_chars: int, diag: Dict,
+                  tag: str, headline: str = "") -> Tuple[str, str]:
+    best = 0
+    for sel in split_selectors(selector_list):
+        try:
+            html = page.evaluate(EXTRACT_INNER_HTML_JS, sel)
+        except Exception:
+            continue
+        text = clean_markdown(html_to_markdown(html), headline=headline) if html else ""
+        best = max(best, len(text))
+        if len(text) >= min_chars:
+            diag[tag] = len(text)
+            return text, sel
+    diag[tag] = best
+    return "", ""
+
+
+def extract_content(page, final_url: str, css_map: Dict[str, str],
+                    default_css: str, min_chars: int,
+                    diag: Dict, headline: str = "") -> Tuple[str, str]:
+    # 1. CSS path domain (jika ada di CSV)
+    css, src = get_css_for_url(final_url, css_map)
+    if css:
+        text, sel = try_selectors(page, css, min_chars, diag, "css", headline=headline)
+        if text:
+            return text, f"css:{sel} ({src})"
+
+    # 2. Trafilatura: HTML terpangkas dulu, lalu mentah
+    html = page.content()
+    for label, h in (("pruned", None), ("raw", html)):
+        if h is None:
+            try:
+                h = str(prune_html(html))
+            except Exception:
+                continue
+        text = clean_markdown(trafilatura_extract(h, final_url), headline=headline)
+        diag[f"traf_{label}"] = len(text)
+        if len(text) >= min_chars:
+            return text, f"trafilatura-{label}"
+
+    # 3. Blok terpadat otomatis
+    try:
+        dense_html = page.evaluate(DENSE_BLOCK_JS, DESCEND_RATIO)
+        text = clean_markdown(html_to_markdown(dense_html), headline=headline)
+        diag["dense"] = len(text)
         if len(text) >= min_chars:
             return text, "auto-dense-block"
     except Exception:
         pass
 
-    # 3. pilihan terakhir
-    try:
-        return finish(extract_inner_html(page, DEFAULT_CSS), True), "body-fallback"
-    except Exception:
-        return "", "body-fallback"
+    # 4. CSS default ("body"): pilihan terakhir
+    text, sel = try_selectors(page, default_css or DEFAULT_CSS, min_chars, diag, "body", headline=headline)
+    if text:
+        return text, f"body-fallback:{sel}"
+    return "", "failed"
 
 
 def keywords_match(text: str, keywords: List[str]) -> bool:
@@ -616,89 +943,122 @@ def content_fingerprint(text: str) -> str:
     return hashlib.sha1(norm.encode()).hexdigest()
 
 
-# ------------------------------------------------------------- scraping
-def scrape_one(page, url, css_map, timeout, min_chars, exclude,
-               keep_body) -> Dict:
+# ================================================================= SCRAPING
+def scrape_one(page, url: str, css_map: Dict[str, str], default_css: str,
+               timeout: int, min_chars: int, exclude: List[str],
+               keep_body: bool = False, debug_dir: Optional[str] = None) -> Dict:
     row = {"url": url, "final_url": url, "title": "", "method": "",
            "chars": "0", "status": "SUCCESS", "content": "", "raw": "",
-           "flags": ""}
+           "flags": "", "diag": ""}
     try:
-        target = decode_gnews(url) or url if is_gnews(url) else url
+        target = (decode_gnews(url) or url) if is_gnews(url) else url
         page.goto(target, wait_until="domcontentloaded", timeout=timeout * 1000)
 
-        if is_gnews(target):  # tidak terdekode -> tunggu redirect lewat browser
-            redirected = False
+        if is_gnews(page.url):
+            ok = False
             for attempt in range(3):
                 try:
                     page.wait_for_url(lambda u: not is_gnews(u), timeout=20000)
-                    redirected = True
+                    ok = True
                     break
                 except Exception:
                     if attempt < 2:
-                        time.sleep(3 * (attempt + 1))  # jeda bertahap
+                        time.sleep(3 * (attempt + 1))
                         page.goto(url, wait_until="domcontentloaded",
                                   timeout=timeout * 1000)
-            if not redirected:
+            if not ok:
                 row["status"] = "GNEWS_REDIRECT_FAILED"
                 return row
-            page.wait_for_load_state("domcontentloaded")
 
         try:
-            page.wait_for_load_state("networkidle", timeout=5000)
+            page.wait_for_load_state("networkidle", timeout=4000)
         except Exception:
             pass
 
         row["final_url"] = page.url
-        row["title"] = (page.title() or "").strip()
+        # Ekstrak judul <h1> artikel sebenarnya (bukan sekadar <title> browser)
+        row["title"] = extract_headline(page)
 
         if exclude and host_in(page.url, exclude):
             row["status"] = "EXCLUDED_DOMAIN"
             return row
 
-        content, method = extract_content(page, page.url, css_map, min_chars)
+        diag: Dict[str, int] = {}
+        content, method = extract_content(
+            page, page.url, css_map, default_css, min_chars, diag, headline=row["title"]
+        )
         row["method"] = method
-        if method == "body-fallback" and not keep_body:
+        row["diag"] = "|".join(f"{k}:{v}" for k, v in diag.items())
+
+        if method == "failed":
+            best = max([v for k, v in diag.items() if k != "body"] or [0])
+            row["status"] = "TOO_SHORT" if best >= 150 else "EXTRACTION_FAILED"
+            content = ""
+        elif method.startswith("body-fallback") and not keep_body:
             row["status"] = "LOW_QUALITY_BODY_FALLBACK"
             content = ""
+
+        if debug_dir and row["status"] in ("TOO_SHORT", "EXTRACTION_FAILED",
+                                           "LOW_QUALITY_BODY_FALLBACK"):
+            os.makedirs(debug_dir, exist_ok=True)
+            name = re.sub(r"[^a-z0-9]+", "_", host_of(page.url) + urlparse(page.url).path)[:80]
+            with open(os.path.join(debug_dir, f"{name}.html"), "w",
+                      encoding="utf-8") as f:
+                f.write(page.content())
+
         row["content"] = content
         row["raw"] = content
     except Exception as e:
-        row["status"] = f"ERROR: {e}"
+        row["status"] = "ERROR: " + (str(e).splitlines() or [type(e).__name__])[0][:140]
     return row
 
 
-def scrape(urls, css_map, headless=True, timeout=30, min_chars=300,
-           exclude=None, keep_body=False, delay=(1.0, 2.5)) -> List[Dict]:
+def scrape(urls: List[str], css_map: Dict[str, str], default_css: str,
+           headless: bool = True, timeout: int = 30, min_chars: int = 300,
+           exclude: Optional[List[str]] = None, keep_body: bool = False,
+           debug_dir: Optional[str] = None,
+           delay: Tuple[float, float] = (1.0, 2.0)) -> List[Dict]:
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
         print("[Error] pip install playwright && playwright install chromium")
         sys.exit(1)
 
-    results = []
+    results: List[Dict] = []
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=headless)
         ctx = browser.new_context(user_agent=UA, locale="id-ID")
         page = ctx.new_page()
 
+        def run(url: str, idx: int, total: int, tag: str = "") -> Dict:
+            print(f"[{idx}/{total}]{tag} {url[:100]}")
+            row = scrape_one(page, url, css_map, default_css, timeout,
+                             min_chars, exclude or [], keep_body, debug_dir)
+            print(f"    -> {row['status']} | {row['method'][:60]} | "
+                  f"{len(row['content'])} chars | {row['final_url'][:75]}")
+            return row
+
         for idx, raw_url in enumerate(urls, 1):
             url = raw_url if raw_url.startswith(("http://", "https://")) \
                 else f"https://{raw_url}"
-            print(f"[{idx}/{len(urls)}] {url[:110]}")
-            row = scrape_one(page, url, css_map, timeout, min_chars,
-                             exclude, keep_body)
-            print(f"    -> {row['status']} | {row['method']} | "
-                  f"{len(row['content'])} chars | {row['final_url'][:80]}")
-            results.append(row)
+            results.append(run(url, idx, len(urls)))
             time.sleep(random.uniform(*delay))
+
+        failed = [i for i, r in enumerate(results)
+                  if r["status"] == "GNEWS_REDIRECT_FAILED"]
+        if failed:
+            print(f"[*] Mengulang {len(failed)} link Google News yang gagal...")
+            time.sleep(5)
+            for i in failed:
+                results[i] = run(results[i]["url"], i + 1, len(urls), " (ulang)")
+                time.sleep(random.uniform(*delay))
         browser.close()
     return results
 
 
 def finalize(results: List[Dict], keywords: List[str], min_chars: int,
              strip_quotes: bool = True):
-    """Lintas dokumen: duplikat -> boilerplate -> panjang -> keyword."""
-    # 1. duplikat dulu, agar salinan yang sama tidak dianggap bukti boilerplate
+    # 1. Saring duplikat
     seen_urls, seen_fp = set(), set()
     for r in results:
         if r["status"] != "SUCCESS" or not r["content"]:
@@ -710,15 +1070,15 @@ def finalize(results: List[Dict], keywords: List[str], min_chars: int,
         seen_urls.add(nu)
         seen_fp.add(fp)
 
-    # 2. baris yang berulang di banyak dokumen
+    # 2. Pembersihan otomatis baris boilerplate lintas dokumen
     removed, protected = corpus_clean(results)
     print(f"[*] Pembersihan lintas dokumen: {removed} baris boilerplate dibuang"
           f"{f', {protected} dokumen dilindungi' if protected else ''}.")
 
-    # 3. pemoles akhir (teks polos), lalu filter panjang & keyword
+    # 3. Poles teks polos (termasuk memasang judul <h1> di baris paling atas) & filter panjang + keyword
     for r in results:
         if r["status"] == "SUCCESS" and r["content"]:
-            r["content"] = final_polish(r["content"], strip_quotes)
+            r["content"] = final_polish(r["content"], headline=r.get("title", ""), strip_quotes=strip_quotes)
     for r in results:
         if r["status"] != "SUCCESS":
             r["chars"] = "0"
@@ -728,37 +1088,36 @@ def finalize(results: List[Dict], keywords: List[str], min_chars: int,
         elif not keywords_match(r["content"], keywords):
             r["status"], r["content"] = "SKIPPED_NO_KEYWORD_MATCH", ""
         r["chars"] = str(len(r["content"]))
-        r["flags"] = quality_flags(r["content"]) if r["content"] else ""
+        r["flags"] = quality_flags(r["content"], headline=r.get("title", "")) if r["content"] else ""
 
 
-# --------------------------------------------------------------- output
+# =============================================================== PENYIMPANAN
 def ensure_parent(path: str):
     os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
 
 
-def save_output(results, target: str, mode: str, md_headers: bool = False):
+def save_output(results: List[Dict], target: str, mode: str,
+                md_headers: bool = False):
     valid = [r for r in results if r["content"].strip()]
-    out_dir = os.path.dirname(target) if mode == "merge" else target
-    os.makedirs(out_dir or ".", exist_ok=True)
-
     if mode == "merge":
+        ensure_parent(target)
         blocks = [(f"# {r['final_url']}\n\n" if md_headers else "")
                   + r["content"].strip() for r in valid]
         with open(target, "w", encoding="utf-8") as f:
             f.write("\n\n---\n\n".join(blocks) + "\n")
-        print(f"\n[OK] {len(valid)} artikel bersih digabung ke: "
-              f"{os.path.abspath(target)}")
+        print(f"\n[OK] {len(valid)} artikel bersih digabung ke: {os.path.abspath(target)}")
     else:
+        os.makedirs(target, exist_ok=True)
         for i, r in enumerate(valid, 1):
             host = urlparse(r["final_url"]).netloc
-            path = os.path.join(out_dir, f"article_{i:03d}_{host}.md")
-            with open(path, "w", encoding="utf-8") as f:
+            with open(os.path.join(target, f"article_{i:03d}_{host}.md"), "w",
+                      encoding="utf-8") as f:
                 f.write((f"# {r['final_url']}\n\n" if md_headers else "")
                         + r["content"].strip() + "\n")
-        print(f"\n[OK] {len(valid)} file disimpan di: {os.path.abspath(out_dir)}")
+        print(f"\n[OK] {len(valid)} file artikel disimpan di: {os.path.abspath(target)}")
 
 
-def save_jsonl(results, path: str, field: str = "content"):
+def save_jsonl(results: List[Dict], path: str, field: str = "content"):
     rows = [r for r in results if r.get(field, "").strip()]
     ensure_parent(path)
     with open(path, "w", encoding="utf-8") as f:
@@ -767,40 +1126,40 @@ def save_jsonl(results, path: str, field: str = "content"):
                 "url": r["final_url"], "domain": host_of(r["final_url"]),
                 "title": r["title"], "method": r["method"],
                 "chars": len(r[field]), "flags": r.get("flags", ""),
-                "text": r[field],
-            }, ensure_ascii=False) + "\n")
+                "text": r[field]}, ensure_ascii=False) + "\n")
     print(f"[OK] JSONL ({len(rows)} baris): {os.path.abspath(path)}")
 
 
-def save_report(results, report_path: str):
-    ensure_parent(report_path)
-    with open(report_path, "w", encoding="utf-8", newline="") as f:
+def save_report(results: List[Dict], path: str):
+    ensure_parent(path)
+    with open(path, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, delimiter=";")
-        w.writerow(["url", "final_url", "method", "chars", "status", "flags"])
+        w.writerow(["url", "final_url", "title", "method", "chars", "status",
+                    "flags", "diag"])
         for r in results:
-            w.writerow([r["url"], r["final_url"], r["method"],
-                        r["chars"], r["status"], r.get("flags", "")])
+            w.writerow([r["url"], r["final_url"], r["title"], r["method"],
+                        r["chars"], r["status"], r.get("flags", ""),
+                        r.get("diag", "")])
     n_flag = sum(1 for r in results if r.get("flags"))
     if n_flag:
         print(f"[!] {n_flag} artikel bertanda 'flags' -> cek kolom flags di laporan")
-    print(f"[OK] Laporan status: {os.path.abspath(report_path)}")
+    print(f"[OK] Laporan status: {os.path.abspath(path)}")
 
 
-# ----------------------------------------------------------------- main
+# ======================================================================= CLI
 def main():
-    ap = argparse.ArgumentParser(description="Scraper artikel otomatis untuk dataset")
+    ap = argparse.ArgumentParser(description="Scraper artikel bersih untuk dataset CPT")
     ap.add_argument("--urls", "-u", default=None,
-                    help="File daftar URL (default: sample_urls.txt, kecuali "
-                         "bila --gnews dipakai)")
-    ap.add_argument("--keywords", default="daftar_keywords.txt")
-    ap.add_argument("--css-paths", default=None,
-                    help="OPSIONAL: CSV ';' url;css_path untuk override manual")
-    ap.add_argument("--output", "-o", default="output_articles.md")
+                    help="File daftar URL (default: sample_urls.txt bila tanpa --gnews/--dorks)")
+    ap.add_argument("--keywords", default="kw_test.txt")
+    ap.add_argument("--css-path", default=DEFAULT_CSS,
+                    help="CSS default (pilihan terakhir). Default: 'body'")
+    ap.add_argument("--css-paths", default="sample_css_paths.csv",
+                    help="CSV mapping 'url;css_path' per domain")
+    ap.add_argument("--output", "-o", default="test.md")
     ap.add_argument("--output-mode", choices=["each", "merge"], default="merge")
-    ap.add_argument("--jsonl", default="dataset.jsonl",
-                    help="Dataset final (kosongkan '' untuk menonaktifkan)")
-    ap.add_argument("--raw-jsonl", default="raw_dataset.jsonl",
-                    help="Hasil sebelum pembersihan lintas dokumen")
+    ap.add_argument("--jsonl", default="dataset.jsonl")
+    ap.add_argument("--raw-jsonl", default="raw_dataset.jsonl")
     ap.add_argument("--report", default="scrape_report.csv")
     ap.add_argument("--no-headless", action="store_true")
     ap.add_argument("--timeout", type=int, default=30)
@@ -812,101 +1171,103 @@ def main():
                     help="Tambahkan '# URL' di tiap artikel pada output .md")
     ap.add_argument("--keep-body", action="store_true",
                     help="Ikutkan hasil fallback 'body' (tidak disarankan)")
+    ap.add_argument("--keep-dateline", action="store_true",
+                    help="Pertahankan dateline pembuka (mis. 'JAKARTA - '); default: dibuang")
+    ap.add_argument("--drop-title", action="store_true",
+                    help="Buang judul <h1> di awal artikel (default: judul <h1> disertakan di baris pertama)")
+    ap.add_argument("--limit", type=int, default=30,
+                    help="Maksimal URL yang di-scrape (default 30 untuk uji cepat; 0 = semua)")
+    ap.add_argument("--seed", type=int, default=42,
+                    help="Seed pengacakan urutan query saat --limit dipakai")
+    ap.add_argument("--debug-dir", default=None,
+                    help="Simpan HTML halaman gagal/pendek ke folder ini untuk diperiksa")
 
-    g = ap.add_argument_group("Pencarian URL (semua Indonesia)")
-    g.add_argument("--gnews", action="store_true",
-                   help="Cari URL lewat Google News RSS (tanpa API key)")
-    g.add_argument("--dorks", default=None,
-                   help="File template dork, mis. '\"{kw}\" site:go.id'")
-    g.add_argument("--search-source", choices=["gnews", "brave", "both"],
-                   default=None,
-                   help="gnews=Google News RSS | brave=web (butuh BRAVE_API_KEY)")
+    g = ap.add_argument_group("Pencarian URL (Google News RSS & dorking, Indonesia)")
+    g.add_argument("--gnews", action="store_true")
+    g.add_argument("--dorks", default=None, help="File template dork")
     g.add_argument("--when", nargs="+", default=["10d", "30d", "none"])
     g.add_argument("--hl", default="id")
     g.add_argument("--gl", default="ID")
-    g.add_argument("--max-per-query", type=int, default=10)
+    g.add_argument("--max-per-query", type=int, default=5)
     args = ap.parse_args()
 
+    OPTS["dateline"] = not args.keep_dateline
+    OPTS["drop_title"] = args.drop_title
     keywords = load_keywords(args.keywords)
     css_map = load_css_paths(args.css_paths)
     exclude = [clean_domain_key(d) for d in args.exclude_domains]
-    print(f"[*] Mode otomatis | override CSS: {len(css_map)} | "
-          f"keyword: {len(keywords)}")
+    print(f"[*] Default CSS: '{args.css_path}' | CSS mapping: {len(css_map)} domain "
+          f"| keyword: {len(keywords)} | limit: {args.limit or 'semua'}")
     if trafilatura is None:
-        print("[!] trafilatura belum terinstal -> hanya 'auto-dense-block'. "
-              "Disarankan: pip install trafilatura")
+        print("[!] trafilatura belum terinstal -> kualitas turun. pip install trafilatura")
 
-    use_search = bool(args.gnews or args.dorks or args.search_source)
+    use_search = bool(args.gnews or args.dorks)
     urls_file = args.urls or (None if use_search else "sample_urls.txt")
-    urls = read_url_list(urls_file)
+    source_of: Dict[str, str] = {}
+    cands: List[str] = list(read_url_list(urls_file))
 
     if use_search:
         if not keywords:
-            print(f"[Error] File keywords kosong/tidak ditemukan: "
-                  f"{os.path.abspath(args.keywords)}")
+            print(f"[Error] File keywords kosong/tidak ditemukan: {os.path.abspath(args.keywords)}")
             sys.exit(1)
-        source = args.search_source or "gnews"
         if args.dorks:
             if not os.path.isfile(args.dorks):
-                print(f"[Error] File dorks tidak ditemukan: "
-                      f"{os.path.abspath(args.dorks)}")
+                print(f"[Error] File dorks tidak ditemukan: {os.path.abspath(args.dorks)}")
                 sys.exit(1)
             templates = read_lines(args.dorks)
             if not templates:
-                print(f"[Error] File dorks kosong (atau semua barisnya diawali "
-                      f"#): {os.path.abspath(args.dorks)}")
+                print(f"[Error] File dorks kosong: {os.path.abspath(args.dorks)}")
                 sys.exit(1)
             print(f"[*] {len(templates)} template dork dimuat dari {args.dorks}")
         else:
             templates = ['"{kw}"']
+
         queries = expand_queries(keywords, templates, args.when)
-        print(f"[*] {len(queries)} query | sumber={source} | "
-              f"hl={args.hl}, gl={args.gl}")
+        if args.limit:
+            random.Random(args.seed).shuffle(queries)
+        print(f"[*] {len(queries)} query | hl={args.hl}, gl={args.gl}")
 
-        brave_key = os.environ.get("BRAVE_API_KEY", "")
-        if source in ("brave", "both") and not brave_key:
-            print("[!] BRAVE_API_KEY belum diset -> sumber brave dilewati "
-                  "(PowerShell: $env:BRAVE_API_KEY='...')")
-
+        seen = set(cands)
         for item in queries:
-            if source in ("gnews", "both"):
-                q = gnews_query_text(item)
-                links = fetch_gnews_links(q, args.hl, args.gl, args.max_per_query)
-                print(f"    [gnews] {q}  ->  {len(links)} link")
-                urls.extend(links)
-                time.sleep(random.uniform(1.0, 2.0))
-            if source in ("brave", "both") and brave_key:
-                links = fetch_brave_links(item, args.hl, args.gl,
-                                          args.max_per_query, brave_key)
-                tag = f' (when={item["when"]})' if item["when"] else ""
-                print(f"    [brave] {item['q']}{tag}  ->  {len(links)} link")
-                urls.extend(links)
-                time.sleep(random.uniform(1.0, 2.0))
+            if args.limit and len(seen) >= args.limit * 3:
+                print(f"[*] Kandidat sudah cukup ({len(seen)}), pencarian dihentikan.")
+                break
+            q = gnews_query_text(item)
+            items = fetch_gnews_items(q, args.hl, args.gl, args.max_per_query)
+            print(f"    [gnews] {q}  ->  {len(items)} link")
+            for it in items:
+                if it["link"] not in seen:
+                    seen.add(it["link"])
+                    cands.append(it["link"])
+                    source_of[it["link"]] = it["source"]
+            time.sleep(random.uniform(0.5, 1.2))
 
-    before = len(urls)
-    urls = [u for u in urls
-            if not urlparse(u).path.lower().endswith(SKIP_EXT)]
-    if len(urls) < before:
-        print(f"[*] {before - len(urls)} URL file (pdf/doc/gambar/dll) dilewati.")
-
-    urls = list(dict.fromkeys(urls))
+    cands = [u for u in dict.fromkeys(cands)
+             if not urlparse(u).path.lower().endswith(SKIP_EXT)]
+    urls = pick_diverse(cands, source_of, args.limit)
     if not urls:
-        print("[Error] Tidak ada URL untuk di-scrape.")
-        sys.exit(1)
+        print("[!] Tidak ada URL valid untuk di-scrape.")
+        sys.exit(0)
+    if len(urls) < len(cands):
+        print(f"[*] Mode uji: {len(urls)} dari {len(cands)} URL dipilih "
+              f"(variasi antar-situs). Gunakan --limit 0 untuk semua.")
 
-    results = scrape(urls, css_map, headless=not args.no_headless,
+    print(f"[*] Memulai scraping {len(urls)} URL...")
+    results = scrape(urls, css_map, args.css_path, headless=not args.no_headless,
                      timeout=args.timeout, min_chars=args.min_chars,
-                     exclude=exclude, keep_body=args.keep_body)
+                     exclude=exclude, keep_body=args.keep_body,
+                     debug_dir=args.debug_dir)
 
     if args.raw_jsonl:
         save_jsonl(results, args.raw_jsonl, field="raw")
-    finalize(results, keywords, args.min_chars,
-             strip_quotes=not args.keep_quotes)
-
+    finalize(results, keywords, args.min_chars, strip_quotes=not args.keep_quotes)
     save_output(results, args.output, args.output_mode, args.md_headers)
     if args.jsonl:
         save_jsonl(results, args.jsonl, field="content")
     save_report(results, args.report)
+
+    c = Counter(r["status"].split(":")[0] for r in results)
+    print("[*] Ringkasan status: " + ", ".join(f"{k}={v}" for k, v in c.most_common()))
 
 
 if __name__ == "__main__":

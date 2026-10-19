@@ -3,7 +3,12 @@
 Alias entrypoint for scraper.py
 """
 import sys
-from Scrapper.scraper import main
+import os
+
+try:
+    from Scrapper.scraper import main
+except ImportError:
+    from scraper import main
 
 if __name__ == "__main__":
     main()

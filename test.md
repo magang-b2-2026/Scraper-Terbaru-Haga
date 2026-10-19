@@ -1,200 +1,6 @@
-KOBA – Wakil Bupati Bangka Tengah, Efrianda, berharap pembahasan pemutakhiran Readiness Criteria (RC) SR III Wilayah Barat antara satuan kerja (satker) dan Pemerintah Kabupaten Bangka Tengah dapat menghasilkan solusi terbaik untuk mempercepat rencana pembangunan Sekolah Rakyat. Hal tersebut disampaikannya dalam rapat koordinasi yang berlangsung di Ruang VIP Bupati Kabupaten Bangka Tengah, Selasa (13/10/2026).
+Polres Tapsel Hadir Di Open House Sekolah Rakyat, Perkuat Sinergi Jaga Lingkungan Pendidikan
 
-Wakil Bupati Bangka Tengah menyampaikan bahwa pembangunan Sekolah Rakyat merupakan salah satu program strategis Presiden Republik Indonesia yang diharapkan dapat memberikan manfaat nyata bagi masyarakat, khususnya dalam meningkatkan akses dan pemerataan pendidikan di Kabupaten Bangka Tengah.
-
-Atas nama Pemerintah Kabupaten Bangka Tengah, kami berharap melalui koordinasi ini dapat ditemukan solusi terbaik agar rencana pembangunan Sekolah Rakyat dapat berjalan sebagaimana yang kita harapkan bersama, ujar Efrianda.
-
-Ia menjelaskan, pertemuan ini menjadi momentum penting bagi seluruh pihak terkait untuk berdiskusi, menyampaikan masukan, serta mengidentifikasi berbagai hal yang perlu diselesaikan dalam proses pemutakhiran Readiness Criteria. Menurutnya, sinergi dan koordinasi antarpihak sangat diperlukan agar setiap tahapan persiapan pembangunan dapat berjalan dengan baik.
-
-Efrianda menegaskan, Pemerintah Kabupaten Bangka Tengah berharap pembangunan Sekolah Rakyat dapat segera terealisasi. Keberadaan sekolah tersebut dinilai memiliki arti penting bagi daerah karena diharapkan mampu memperluas kesempatan masyarakat untuk memperoleh pendidikan yang layak dan berkualitas.
-
-Sekolah Rakyat ini sangat berarti bagi kami di Bangka Tengah. Kami berharap keberadaannya nanti dapat membantu meningkatkan kualitas pendidikan serta memberikan kesempatan yang lebih luas bagi masyarakat untuk mendapatkan layanan pendidikan, ungkapnya.
-
-Melalui pembahasan pemutakhiran Readiness Criteria SR III Wilayah Barat tersebut, Pemerintah Kabupaten Bangka Tengah berharap seluruh pihak terkait dapat memberikan dukungan dan menindaklanjuti berbagai hal yang masih diperlukan. Dengan koordinasi dan komitmen bersama, rencana pembangunan Sekolah Rakyat di Kabupaten Bangka Tengah diharapkan dapat segera terealisasi dan memberikan manfaat bagi masyarakat.
-
----
-
-Sekolah Rakyat Kabupaten Bekasi, Harapan Baru Memutus Rantai Kemiskinan
-
-Open House Sekolah Rakyat Terintegrasi 1 Kabupaten Bekasi yang digelar di Aula SRT 1, Desa Sukamahi Cikarang Pusat, Sabtu (17/10/2026). Foto : Imanuddin/Diskominfosantik.
-
-CIKARANG PUSAT – Pemerintah Kabupaten Bekasi memperkuat dukungan terhadap penyelenggaraan Sekolah Rakyat Terintegrasi (SRT) 1 Kabupaten Bekasi sebagai upaya memperluas akses pendidikan bagi anak-anak dari keluarga kurang mampu. Melalui kolaborasi lintas sektor, program ini diharapkan tidak hanya meningkatkan kualitas pendidikan, tetapi juga membuka jalan bagi keluarga untuk anak didik maju dan berkembang, dan mampu bersaing di tiap perkembangan.
-Komitmen tersebut mengemuka dalam kegiatan Open House Sekolah Rakyat Terintegrasi 1 Kabupaten Bekasi yang digelar di Aula SRT 1 Kabupaten Bekasi, Sabtu (17/10/2026).
-Kegiatan ini menjadi momentum untuk memperkenalkan program pendidikan, sistem pembelajaran, serta pola pembinaan siswa kepada para pemangku kepentingan sekaligus memperkuat sinergi dalam mendukung keberlangsungan sekolah.
-Kepala Sekolah Rakyat Terintegrasi 1 Kabupaten Bekasi, Nilam Andini, S.Pd., mengatakan, kegiatan Open House bertujuan memberikan pemahaman kepada masyarakat mengenai karakteristik Sekolah Rakyat yang secara khusus menyasar anak-anak dari keluarga pada kelompok kesejahteraan desil 1 dan desil 2.
-Sekolah Rakyat ini memiliki kekhususan. Siswa tidak mendaftar secara mandiri seperti di sekolah pada umumnya, tetapi melalui proses penjaringan dengan melibatkan pihak terkait. Program ini hadir untuk memberikan kesempatan kepada anak-anak yang memiliki keterbatasan ekonomi agar tetap memperoleh pendidikan dan pembinaan yang layak, ujarnya.
-Menurut Nilam, Sekolah Rakyat tidak hanya berfokus pada kegiatan akademik, tetapi juga pembentukan karakter, pendampingan, dan pengembangan potensi siswa. Melalui pendekatan tersebut, kata dia, anak didik diharapkan tumbuh menjadi pribadi yang mandiri, kompeten, dan mampu meningkatkan kesejahteraan keluarganya di masa depan.
-Saat ini, SRT 1 Kabupaten Bekasi menampung 350 siswa. Dukungan tenaga pendidik dan kependidikan juga terus diperkuat, termasuk melalui kehadiran guru hasil rekrutmen Kementerian Sosial serta dukungan Pemerintah Kabupaten Bekasi pada tahap awal penyelenggaraan.
-Nilam menyampaikan apresiasi, atas dukungan pemerintah daerah, mulai dari fasilitasi lokasi hingga bantuan dalam pemenuhan kebutuhan operasional sekolah. Meski demikian, penambahan jumlah siswa pada tahun berikutnya perlu diimbangi dengan penguatan sumber daya manusia dan dukungan sarana prasarana.
-Ia berharap kolaborasi dengan perangkat daerah dan dunia usaha dapat diperluas, khususnya dalam menyiapkan keterampilan siswa menjelang kelulusan.
-Kami berharap pemerintah daerah maupun perusahaan yang ada di Kabupaten Bekasi dapat berkontribusi sesuai bidang masing-masing, misalnya melalui pelatihan vokasi dan pengembangan keterampilan. Harapannya, setelah lulus anak-anak memiliki bekal untuk bekerja, membantu keluarganya, dan tidak kembali terjebak dalam kemiskinan, katanya.
-Sementara itu, Pelaksana Tugas (Plt.) Bidang Pemberdayaan Sosial Dinas Sosial Kabupaten Bekasi, Nur Layela, menegaskan bahwa keberadaan Sekolah Rakyat menjadi bagian penting dari upaya meningkatkan kesejahteraan masyarakat melalui akses pendidikan bagi kelompok yang membutuhkan perhatian khusus.
-Menurutnya, kebutuhan keluarga kurang mampu tidak berhenti pada pemenuhan sandang dan pangan. Pendidikan juga menjadi kebutuhan mendasar untuk membangun masa depan anak-anak agar memiliki kompetensi, kemandirian, serta peluang kehidupan yang lebih baik.
-Melalui Sekolah Rakyat ini anak-anak kita memiliki kompetensi, dapat membanggakan keluarga, dan ke depan mampu meningkatkan kesejahteraan keluarganya. Kami juga berharap dukungan pemerintah pusat dan pemerintah daerah terus berlanjut agar manfaat program ini semakin luas, ujarnya.
-Nur Layela menambahkan, Dinas Sosial Kabupaten Bekasi juga memiliki program pemberdayaan yang dapat mendukung peningkatan kemandirian ekonomi keluarga, antara lain melalui bantuan sosial dan fasilitasi modal usaha sesuai ketentuan serta kriteria penerima manfaat.
-Ia menjelaskan, penyelenggaraan Sekolah Rakyat membutuhkan keterlibatan berbagai pihak. Dukungan perangkat daerah, termasuk dalam pemenuhan sarana prasarana, layanan pendukung, dan kebutuhan teknis lainnya, menjadi bagian dari upaya menciptakan lingkungan pendidikan yang kondusif bagi siswa.
-Melalui kegiatan Open House ini, sinergi antara pengelola sekolah, pemerintah daerah, masyarakat, dan dunia usaha diharapkan semakin kuat. Kolaborasi tersebut menjadi penting agar pendidikan yang diterima siswa dapat berlanjut pada peningkatan keterampilan, kemandirian ekonomi, serta kesempatan memperoleh pekerjaan setelah lulus.
-Dengan demikian, Sekolah Rakyat Terintegrasi 1 Kabupaten Bekasi diharapkan tidak sekadar menjadi tempat belajar, tetapi juga menjadi bagian dari upaya jangka panjang memutus rantai kemiskinan melalui pendidikan, pemberdayaan, dan peningkatan kualitas sumber daya manusia.
-
----
-
-TELUK KUANTAN – Sekolah Rakyat Terintegrasi 1 Kabupaten Kuantan Singingi (Kuansing), Provinsi Riau, menggelar kegiatan Open House di gedung serbaguna sekolah, Sabtu (17/10/2026). Kegiatan ini menjadi momentum untuk memperkenalkan lingkungan sekolah sekaligus menegaskan komitmen dalam memberikan akses pendidikan bagi seluruh anak, khususnya dari keluarga yang membutuhkan.
-
-Penjabat (Pj.) Sekretaris Daerah Kabupaten Kuantan Singingi, Drs. Muradi, M.Si., yang hadir mewakili Bupati Kuansing, menyampaikan bahwa pendidikan merupakan hak setiap anak. Menurutnya, keterbatasan ekonomi tidak boleh menjadi penghalang bagi anak-anak untuk meraih cita-cita dan masa depan yang lebih baik.
-
-Ketika punya kemauan dan kemampuan, insyaallah akan ada jalan untuk pendidikan. Salah satunya melalui Sekolah Rakyat ini. Pemerintah hadir untuk memastikan tidak ada anak Kuansing yang tertinggal hanya karena persoalan biaya, ujar Muradi.
-
-Ia menegaskan, Sekolah Rakyat Terintegrasi 1 Kuansing tidak hanya berfungsi sebagai tempat untuk memperoleh ilmu pengetahuan, tetapi juga menjadi wadah pembentukan karakter, kedisiplinan, dan akhlak peserta didik.
-
-Karena itu, Muradi berpesan kepada seluruh siswa agar memanfaatkan kesempatan belajar dengan sebaik-baiknya, serta menjadikan pendidikan sebagai bekal untuk membangun masa depan.
-
-Jadikan Sekolah Rakyat ini tempat untuk menggembleng dan mengasah diri agar menjadi pribadi yang baik dan berguna bagi bangsa. Disiplin dalam belajar, jaga akhlak, dan hormati guru. Dari sinilah nantinya akan lahir generasi Kuansing yang hebat, yang mampu mengangkat derajat keluarga dan daerah, pesannya.
-
-Sementara itu, Kepala Sekolah Rakyat Terintegrasi 1 Kuansing menyampaikan apresiasi atas dukungan Pemerintah Kabupaten Kuantan Singingi serta antusiasme para orang tua dalam mendukung pendidikan anak-anak mereka.
-
-Pihak sekolah, lanjutnya, berkomitmen menjadikan sekolah sebagai rumah kedua bagi peserta didik, dengan menghadirkan lingkungan belajar yang mendukung perkembangan akademik sekaligus pembentukan karakter.
-
-Kami siap menjadi rumah kedua bagi anak-anak. Di sini mereka tidak hanya belajar akademik, tetapi juga dibina karakter, kedisiplinan, dan akhlaknya. Kami ingin anak-anak ini tumbuh percaya diri dan memiliki masa depan, ungkapnya.
-
-Melalui kegiatan Open House ini, Sekolah Rakyat Terintegrasi 1 Kuansing diharapkan semakin dikenal masyarakat sebagai bagian dari upaya memperluas akses pendidikan yang inklusif dan berkeadilan.
-
-Pendidikan menjadi salah satu jalan penting untuk meningkatkan kualitas sumber daya manusia dan memutus mata rantai kemiskinan. Dengan dukungan pemerintah, tenaga pendidik, orang tua, serta masyarakat, Sekolah Rakyat diharapkan mampu membuka peluang bagi anak-anak Kuansing untuk tumbuh, berkembang, dan meraih masa depan yang lebih baik.
-
----
-
-Kementerian Sosial membuka pintu seluas luasnya kepada masyarakat untuk mengenal program prioritas Presiden Prabowo Subianto, Sekolah Rakyat. Langkah itu dilakukan melalui open house 1 tahun Sekolah Rakyat yang digelar serentak di 182 titik di seluruh Indonesia.
-
-Kegiatan tersebut secara resmi dibuka Menteri Sosial Saifullah Yusuf atau Gus Ipul bersama Wakil Menteri Sosial Agus Jabo Priyono dari SRMA 13 Bekasi, Jawa Barat secara daring dan luring, Sabtu (17/10/2026).
-
-Saya ditemani Pakil Menteri Sosial Republik Indonesia, Pak Agus Jabo Priyono beserta Pak Sekjen, Pak Hasan Chabibie dan jajaran Kementerian Sosial yang lain bersama-sama di sini dengan Bapak Ibu sekalian yang terhubung dengan 182 titik penyelenggaran sekolah rakyat di mana hari ini 17 Oktober kita semua menyelenggarakan open house serentak di seluruh Indonesia, ujarnya dalam keterangan tertulis, Sabtu (17/10/2026).
-
-Gus Ipul menyebut open house Sekolah Rakyat hari ini istimewa karena bertepatan dengan hari ulang tahun Presiden Republik Indonesia, Prabowo Subianto. Dia pun mengajak semua yang hadir untuk mendoakan.
-
-Kita semua mengucapkan selamat hari ulang tahun untuk Bapak Presiden dengan iringan doa semoga panjang umur, sehat, penuh berkah, dan sukses memimpin Indonesia, ucapnya.
-
-Lebih lanjut Gus Ipul bersyukur lantaran salah satu gagasan besar Presiden yaitu sekolah rakyat mulai menunjukkan hasil yang menggembirakan. Salah satu indikator sederhananya adalah penampilan para siswa di panggung yang penuh percaya diri.
-
-Padahal, hampir seluruh siswa sekolah rakyat datang dari keluarga dengan berbagai keterbatasan. Ada yang sebelumnya putus sekolah, ada yang kehilangan kepercayaan diri, bahkan ada yang hampir kehilangan harapan.
-
-Tetapi hari ini kita menyaksikan perubahan, katanya.
-
-Secara cakupan manfaat, program Sekolah Rakyat juga melesat sejak pertama kali diluncurkan pada 2025 lalu. Sudah lebih dari 44.000 anak belajar di 182 titik sekolah rakyat yang tersebar di 34 provinsi Indonesia.
-
-Sekolah rakyat, Gus Ipul melanjutkan, tak hanya memberikan pendidikan, tetapi juga menghadirkan rehabilitasi sosial. Tak sekedar mengajarkan ilmu, pengetahuan, tetapi juga membangun karakter, memulihkan kepercayaan diri, dan menumbuhkan harapan.
-
-Namun, perjalanan masih panjang. Masih banyak kekurangan yang harus diperbaiki dan masih banyak tantangan yang harus dihadapi.
-
-Karena itulah hari ini kita membuka pintu seluruh sekolah rakyat melalui Open House di seluruh Indonesia. Kita mengundang para kepala daerah, tokoh masyarakat, tokoh agama, dan seluruh warga sekitar untuk datang, melihat, mengenal, dan ikut merasakan kehidupan anak-anak kita di sekolah rakyat, ujarnya.
-
-Gus Ipul juga memohon doa restu, dukungan, masukan, serta pengawasan untuk menjaga para siswa, mengantisipasi berbagai resiko, karena keberhasilan sekolah rakyat bukan hanya tanggung jawab pemerintah, tetapi juga membutuhkan kepedulian semua.
-
-Terima kasih kepada pimpinan TNI-Polri, pemerintah daerah, segenap tokoh, lembaga swadaya masyarakat, dan semua pihak yang telah membantu penyelenggaran sekolah rakyat gagasan Presiden Prabowo, katanya.
-
-Gus Ipul menutup sambutannya dengan bait sederhana tapi penuh makna.
-
-Ada anak yang dulu takut bermimpi karena hidup terlalu sering menghukum. Ada harapan yang nyaris berhenti karena kemiskinan membatasi langkah kaki. Namun hari ini cerita mulai berganti. Ada pintu terbuka, ada harapan bersemi. Dulu mereka hanya berani bermimpi. Kini mereka berani mengejar dan meraihnya sendiri, katanya.
-
-Ucapan Selamat Ulang Tahun Presiden
-
-Sebelum membuka acara open house, Gus Ipul disambut atraksi baris variasi dan yel-yel siswa Sekolah Rakyat.
-
-Di sepanjang koridor menuju aula SRMA 13, Gus Ipul dan rombongan juga disuguhi hasil karya para siswa. Mulai dari hasil kerajinan tangan dari bahan daur ulang, sabun, robotik smart home dan miniatur kapal fight fire, pojok literasi, serta produk telur asin.
-
-Di atas panggung, para siswa juga unjuk kemampuan dengan menampilkan tarian Nusantara, silat, paduan suara, pidato empat bahasa asing, hingga pembacaan puisi. Yang istimewa, dari sekian penampilan para siswa nyaris semuanya disisipi ucapan selamat ulang tahun kepada Presiden Prabowo Subianto.
-
-Selamat ulang tahun bapak presiden terima kasih sudah membuka pintu yang dahulu tak pernah berani kami ketuk, ujar para siswa.
-
-Kegiatan open house ditutup dengan peninjauan ke berbagai fasilitas sekolah rakyat seperti laboratorium Fisika, Kimia dan Biologi serta kegiatan belajar mengajar, dipandu Kepala Sekolah SRMA 13 Bekasi Lastri Fajarwati.
-
-Turut hadir dalam kegiatan ini Sekjen Kemensos M Hasan Chabibie, Staf Ahli Menteri Afrizon Tanjung, Dirjen Rehabilitasi Sosial Supomo, Stafsus Bidang Komunikasi dan Media Massa Fathurohman Taufik, Tenaga Ahli Menteri Galih Hidayatullah, Tenaga Ahli Menteri Agustinus Budi Prasetyo, Kabiro Humas Devi Deliani, serta para tamu undangan lain.
-
----
-
-Akademisi Untan Pontianak: Sekolah Rakyat Universitas Perlu Dikaji Ulang
-
-RRI.CO.ID, Sanggau - Wacana penerapan program Sekolah Rakyat hingga jenjang perguruan tinggi dinilai membutuhkan pematangan konsep agar pelaksanaannya tepat sasaran dan sesuai dengan kebutuhan pendidikan. Akademisi Universitas Tanjungpura (Untan) Pontianak, Nur Fajrina H, menilai pendidikan tinggi memiliki kompleksitas tersendiri sehingga rencana tersebut perlu dikaji secara mendalam sebelum diterapkan.
-
-Sekolah Rakyat untuk perguruan tinggi perlu dimatangkan dan dikaji ulang karena pendidikan tinggi jauh lebih kompleks, ujar Nur Fajrina H dalam Dialog RRI Sanggau Menyapa, Sabtu 17 Oktober 2026.
-
-Ia menjelaskan, penyelenggaraan Sekolah Rakyat pada tingkat pendidikan menengah memiliki karakteristik yang berbeda dengan pendidikan di perguruan tinggi. Perbedaan tersebut tidak hanya menyangkut jenjang pendidikan, tetapi juga pilihan bidang studi dan kesiapan mahasiswa dalam menentukan arah masa depan.
-
-Menurutnya, salah satu aspek yang perlu diperhatikan adalah mekanisme pemilihan jurusan bagi calon mahasiswa. Penentuan program studi harus mempertimbangkan kebutuhan dunia kerja, potensi peserta didik, serta pemerataan peminat di berbagai bidang keilmuan.
-
-Nur mengingatkan, pemilihan jurusan yang terlalu terpusat pada bidang-bidang tertentu berpotensi menimbulkan ketimpangan jumlah lulusan. Jika tidak diimbangi dengan perencanaan yang baik, kondisi tersebut dikhawatirkan dapat memicu inflasi sarjana, yakni meningkatnya jumlah lulusan perguruan tinggi yang tidak sebanding dengan kebutuhan lapangan kerja.
-
-Ia menilai, penerapan Sekolah Rakyat hingga tingkat universitas tidak dapat disamakan begitu saja dengan model pendidikan pada jenjang sebelumnya. Perguruan tinggi membutuhkan perencanaan yang lebih terperinci, termasuk dalam menentukan bidang studi yang relevan dan prospek lulusan setelah menyelesaikan pendidikan.
-
-Kajian menyeluruh diperlukan agar program tersebut tidak hanya memperluas akses pendidikan, tetapi juga mampu menghasilkan lulusan sesuai kebutuhan masyarakat dan dunia kerja, katanya.
-
-Nur Fajrina berharap pemerintah mempertimbangkan berbagai aspek sebelum memutuskan penerapan Sekolah Rakyat di perguruan tinggi. Dengan pematangan konsep dan evaluasi yang komprehensif, kebijakan pendidikan diharapkan dapat berjalan efektif serta memberikan manfaat jangka panjang bagi peserta didik dan pembangunan sumber daya manusia.
-
----
-
-SIDENRENG RAPPANG, RAKYATSULSEL - ebagai bentuk komitmen nyata dalam mendukung peningkatan kualitas pendidikan serta pembentukan karakter generasi muda, PT Bank Negara Indonesia (Persero) Tbk (BNI) melalui BNI Regional Area 3 – Parepare Branch Office menyelenggarakan program BNI Sahabat Sekolah Rakyat di Sekolah Rakyat Terintegrasi (SRT) 1 Sidenreng Rappang.
-
-Program BNI Sahabat Sekolah Rakyat merupakan hasil kolaborasi strategis antara Kementerian Sosial (Kemensos) RI dan BNI, dengan pendampingan langsung dari pemerintah daerah setempat. Pencanangan program ini sebelumnya telah diresmikan pada 25 September 2026 di Sekolah Rakyat Terintegrasi (SRT) 3 Makassar, Sulawesi Selatan. Mengusung tema Mimpi yang Diberi Ruang, BNI menargetkan perluasan program ini ke 172 Sekolah Rakyat yang tersebar di berbagai daerah sepanjang bulan September hingga November 2026.
-
-Pgs. Regional Area Head 3 BNI Kantor Wilayah 07, Ibu Andi Nuratika, dalam sambutannya menyampaikan bahwa program BNI Sahabat Sekolah Rakyat difokuskan pada empat pilar utama, yaitu:
-
-Cerdas Belajar: Mendorong peningkatan mutu dan semangat belajar siswa.
-
-Cerdas Menabung: Mengenalkan dan mengedukasi pentingnya literasi finansial sejak dini.
-
-Cerdas Sekolah: Mendukung terciptanya lingkungan sekolah yang kondusif dan adaptif.
-
-Cerdas Mengelola Sampah: Menanamkan kepedulian lingkungan dan kebiasaan hidup bersih sejak usia muda.
-
-Melalui program ini, BNI berkomitmen untuk memperkuat fondasi pendidikan, membentuk generasi yang mandiri dan berkarakter, serta membangun literasi finansial anak-anak sejak dini agar mereka siap menyongsong masa depan yang lebih baik, ujar Ibu Andi Nuratika.
-
-Kegiatan yang berlangsung hangat dan penuh antusiasme ini turut dihadiri oleh Bupati Sidenreng Rappang yang diwakili oleh Kepala Dinas Sosial Kabupaten Sidenreng Rappang, perwakilan jajaran Forkopimda, tokoh masyarakat setempat, serta para orang tua siswa SRT 1 Sidrap.
-
-Dengan terlaksananya kegiatan ini di SRT 1 Sidenreng Rappang, BNI berharap dapat memberikan dampak positif secara berkelanjutan bagi para siswa, tenaga pendidik, dan masyarakat sekitar.
-
----
-
-MIMIKA, Seputarpapua.com | Sekolah Rakyat (SR) Terintegrasi 76 Mimika memperingati hari jadinya yang pertama pada Sabtu (17/10/2026). Perayaan tersebut diwarnai dengan berbagai penampilan seni dan demonstrasi bela diri dari para siswa-siswi.
-
-​Bagi Danius Wenda, salah seorang orang tua wali murid, keberadaan Sekolah Rakyat selama satu tahun terakhir memberikan dampak yang sangat besar bagi keluarganya. Ia menyampaikan apresiasi dan terima kasih yang mendalam kepada Presiden Prabowo Subianto dan Wakil Presiden Gibran Rakabuming Raka atas hadirnya program tersebut.
-​Kami ini orang tidak mampu, ekonomi kami lemah, sehingga anak-anak sempat tertinggal pendidikannya. Namun, keberadaan sekolah ini sangat membantu kami, ujar Danius.
-
-​Danius mengungkapkan, berkat program ini, anaknya dapat melanjutkan pendidikan dengan baik dan memiliki harapan masa depan yang lebih cerah.
-
-​Ia pun berharap pemerintah pusat tidak hanya menyediakan Sekolah Rakyat untuk jenjang SMP dan SMA/SMK, tetapi juga mengembangkannya hingga ke tingkat Pendidikan Anak Usia Dini (PAUD), Taman Kanak-kanak (TK), Sekolah Dasar (SD), hingga Perguruan Tinggi secara gratis.
-
-​Di Mimika belum ada TK, PAUD, SD, maupun perguruan tinggi SR yang gratis. Harapan kami kepada Bapak Presiden, ke depan tingkat pendidikan tersebut juga bisa dibuka, tegasnya.
-
-​Kepala Sekolah Rakyat Terintegrasi 76 Mimika, Ajeng Wulandari, memberikan apresiasi atas kehadiran para tamu undangan dan orang tua murid dalam peringatan setahun sekolah tersebut.
-
-​Ajeng menjelaskan, SRT 76 Mimika merupakan sekolah rintisan yang dirancang untuk memutus rantai kemiskinan melalui jalur pendidikan. Sekolah ini resmi beroperasi sejak 10 Oktober 2025 dan diperuntukkan bagi anak-anak dari keluarga prasejahtera pada kategori desil 1 dan desil 2.
-
-​Sekolah Rakyat dirancang sebagai ruang tumbuh yang berdaya dan aman agar mereka menjadi agen perubahan, kata Ajeng.
-
-​Dalam menunjang aktivitasnya, sekolah ini memanfaatkan gedung Wisma Atlet setinggi tiga lantai. Lantai 1 digunakan sebagai area Kegiatan Belajar Mengajar (KBM). Lantai 2 digunakan untuk srama putri serta ruang tinggal bagi guru dan wali asuh putri dan Lantai 3 sebagai srama putra dan ruang tinggal bagi wali asuh putra.
-
-​Untuk menunjang pembelajaran, setiap siswa telah menerima fasilitas laptop pribadi. Sekolah ini juga dilengkapi dengan laboratorium bahasa berisi Personal Computer (PC) serta smartboard di setiap ruang kelas.
-
-​Saat ini, SRT 76 Mimika membina 58 siswa yang terbagi dalam enam rombongan belajar (Rombel) untuk jenjang SMP (kelas 7 dan 8) serta SMA (kelas XI dan XII). Para siswa berasal dari berbagai distrik di Kabupaten Mimika, seperti Kuala Kencana, Mimika Baru, Kwamki Narama, Mapurujaya, Mimika Timur, hingga Mimika Barat Jauh.
-
-​Operasional dan pendampingan di asrama didukung oleh tenaga Pegawai Pemerintah dengan Perjanjian Kerja (P3K) dan outsourcing, yang terdiri dari 10 orang guru, 4 orang wali asrama, 12 orang wali asuh, serta
-​13 orang staf pendukung (juru masak, petugas kebersihan, dan petugas keamanan).
-
-​Sekolah Rakyat menggunakan kurikulum nasional dengan pendekatan multi-entry multi-exit, yang memungkinkan siswa masuk dan lulus sesuai dengan kecepatan belajar masing-masing.
-
-​Penerimaan siswa dilakukan tanpa tes akademik, melainkan berdasarkan data sosial. Setiap siswa didampingi secara khusus sesuai latar belakang keluarga, kondisi fisik, dan kesehatan mentalnya.
-
-​Sekolah Rakyat tidak hanya mengajar, tetapi juga memulihkan dan mendampingi, jelas Ajeng.
-
-​Melalui pola pembinaan terpadu, perkembangan fisik dan karakter siswa menunjukkan perubahan positif, termasuk peningkatan kedisiplinan dan rasa percaya diri. Para siswa juga telah mengukir berbagai prestasi, di antaranya menjadi Juara Umum Tingkat Kabupaten cabang atletik pada O2SN, serta terpilih menjadi anggota Paskibraka di tingkat provinsi dan kabupaten.
-
-​Meski telah berjalan satu tahun, Ajeng mengakui sekolahnya masih membutuhkan dukungan dari berbagai pihak demi kelancaran KBM dan pengasuhan siswa.
-
-​Kebutuhan mendesak yang diperlukan saat ini meliputi pemenuhan kekurangan tenaga guru, pendampingan sosial dari psikolog dan konselor, fasilitas olahraga dan seni, serta peningkatan dukungan keamanan lingkungan asrama dari gangguan luar.
-
-​Ia menegaskan bahwa seluruh kebutuhan dasar siswa, mulai dari asupan makanan bergizi, pemeriksaan kesehatan berkala, hingga pembekalan keterampilan hidup dan pendampingan emosional 24 jam, terus dipenuhi dengan baik di lingkungan asrama.
-
----
-
-TAPANULI SELATAN – Kehadiran polisi di lingkungan pendidikan tidak hanya berkaitan dengan keamanan, tetapi juga membangun kedekatan dan komunikasi dengan masyarakat. Semangat itu tercermin dalam keikutsertaan Polres Tapanuli Selatan pada kegiatan Open House Sekolah Rakyat Terintegrasi 1 Sumatera Utara di Kecamatan Sipirok, Sabtu (17/10/2026).
+Kehadiran polisi di lingkungan pendidikan tidak hanya berkaitan dengan keamanan, tetapi juga membangun kedekatan dan komunikasi dengan masyarakat. Semangat itu tercermin dalam keikutsertaan Polres Tapanuli Selatan pada kegiatan Open House Sekolah Rakyat Terintegrasi 1 Sumatera Utara di Kecamatan Sipirok, Sabtu (17/10/2026).
 
 Kapolres Tapanuli Selatan AKBP Anton Santoso, S.I.K., M.M., diwakili Kapolsek Sipirok AKP Aswin Manurung, S.H., menghadiri kegiatan yang turut dihadiri Bupati Tapanuli Selatan H. Gus Irawan Pasaribu, unsur TNI, kejaksaan, jajaran pemerintah daerah, tenaga pendidik, dan undangan lainnya.
 
@@ -212,7 +18,9 @@ Seluruh rangkaian kegiatan berakhir sekitar pukul 11.50 WIB dalam keadaan aman d
 
 ---
 
-BANYUWANGI - Bupati Banyuwangi Ipuk Fiestiandani mengaku bangga atas perkembangan siswa Sekolah Rakyat Terintegrasi 1 Banyuwangi. Anak-anak yang sebelumnya terlihat takut dan malu kini mulai lebih percaya diri melalui berbagai penampilan dan karya.
+Melihat Penampilan dan Karya Siswa Sekolah Rakyat Banyuwangi, Bupati Ipuk: Banyak Kemajuan Positif
+
+Bupati Banyuwangi Ipuk Fiestiandani mengaku bangga atas perkembangan siswa Sekolah Rakyat Terintegrasi 1 Banyuwangi. Anak-anak yang sebelumnya terlihat takut dan malu kini mulai lebih percaya diri melalui berbagai penampilan dan karya.
 
 Kami sangat bangga menyaksikan berbagai penampilan siswa Sekolah Rakyat. Kami melihat begitu banyak kemajuan positif dari anak-anak, dari yang dulunya masih takut dan malu sekarang terlihat ceria dan percaya diri, kata Ipuk, Minggu (18/10/2026).
 
@@ -244,121 +52,526 @@ Ipuk berharap fasilitas tersebut dapat menunjang perkembangan siswa, baik dalam 
 
 ---
 
-Pemkab Bekasi : Pers Berperan Penting dalam Sosialisasikan Program Sekolah Rakyat
+Kunjungi Sekolah Rakyat, Dedie Rachim Dorong Siswa Jaga Fasilitas Bersama
 
-Asisten Pemerintahan dan Kesejahteraan Rakyat (Asda I) Setda Kabupaten Bekasi, Hudaya, mewakili Plt. Bupati Bekasi, menghadiri kegiatan Anugerah Jurnalistik Sekolah Rakyat, di Aula Sekolah Rakyat Terpadu (SRT) 1 Kabupaten Bekasi, Sabtu (17/10/2026). FOTO : DANI IBRAHIM/DISKOMINFOSANTIK.
+Wali Kota Bogor, Dedie A. Rachim, bersama jajaran perangkat daerah Kota Bogor mengunjungi Sekolah Rakyat Terintegrasi 6 Kota Bogor, Sabtu (17/10/2026).
 
-CIKARANG PUSAT - Pemerintah Kabupaten Bekasi mengapresiasi peran pers dalam mengawal program pemerintah, termasuk sosialisasi Sekolah Rakyat Terintegrasi (SRT) 1 yang berlokasi di Desa Sukamahi Kecamatan Cikarang Pusat.
-Hal itu disampaikan Asda I Setda Kabupaten Bekasi, Hudaya saat mewakili Plt Bupati Bekasi, menghadiri kegiatan Anugerah Jurnalistik Sekolah Rakyat Tahun 2026 yang diselenggarakan Kementerian Sosial di Aula Sekolah Rakyat Terpadu (SRT) 1 Kabupaten Bekasi, Sukamahi Cikarang Pusat, Sabtu (17/10/2026) malam.
-Kegiatan tersebut turut dihadiri Menteri Sosial Republik Indonesia Saifullah Yusuf, Menteri Koordinator Bidang Pemberdayaan Masyarakat Muhaimin Iskandar, para nomine Anugerah Jurnalistik Sekolah Rakyat, serta siswa-siswi SRT 1 Kabupaten Bekasi.
-Hudaya mengatakan, pemberitaan media mengenai Sekolah Rakyat sangat membantu dalam memperkenalkan program tersebut kepada masyarakat, sekaligus memberikan pemahaman mengenai upaya pemerintah memperluas akses pendidikan bagi anak-anak dari keluarga kurang mampu.
-Publikasi melalui media cetak, media online, maupun video diharapkan menjadi sarana sosialisasi kepada masyarakat luas mengenai keberadaan dan pelaksanaan program Sekolah Rakyat, ujarnya.
-Menurutnya, Sekolah Rakyat bukan sekadar menyediakan fasilitas pendidikan, melainkan juga membuka kesempatan bagi anak-anak dari keluarga kurang mampu untuk memperoleh pendidikan yang layak dan meningkatkan peluang mereka dalam meraih masa depan yang lebih baik.
-Ia menegaskan, Pemkab Bekasi mendukung pembangunan dan penyelenggaraan SRT 1 Kabupaten Bekasi, yang telah memulai kegiatan belajar mengajar untuk jenjang SD, SMP, dan SMA.
-Kegiatan Masa Pengenalan Lingkungan Sekolah (MPLS) dimulai pada 30 Agustus 2026 sebagai tahap awal bagi siswa untuk mengenal lingkungan sekolah dan menyesuaikan diri dengan pola pembelajaran.
-Hudaya mengungkapkan, proses adaptasi menjadi salah satu hal yang masih perlu mendapat perhatian, terutama bagi siswa jenjang SD yang harus menyesuaikan diri dengan lingkungan dan pola kehidupan di sekolah.
-Anak-anak masih membutuhkan waktu untuk beradaptasi karena belum sepenuhnya siap tinggal jauh dari keluarga. Sementara itu, siswa jenjang SMP dan SMA sejauh ini sudah mulai merasa nyaman, katanya.
-Untuk mendukung proses tersebut, para guru, pimpinan sekolah, dan wali kelas terus melakukan pendekatan kepada siswa agar mereka merasa nyaman selama mengikuti kegiatan pembelajaran.
-Hudaya mengatakan,Pemkab Bekasi terus berkoordinasi dengan Kementerian Sosial dan pengelola sekolah untuk mendukung pelaksanaan program serta mengatasi berbagai kendala yang muncul.
-Hudaya berharap, keberadaan Sekolah Rakyat dapat memberikan manfaat berkelanjutan bagi anak-anak dari keluarga kurang mampu di Kabupaten Bekasi.
-Penyebarluasan informasi melalui media dapat membantu masyarakat memahami tujuan program dan berbagai upaya yang dilakukan untuk memberikan kesempatan pendidikan yang lebih baik bagi anak-anak, ungkapnya.
+Saat ini, Sekolah Rakyat Terintegrasi 6 Kota Bogor untuk sementara menempati area asrama kementerian di Jalan Ahmad Yani.
+
+Dengan adanya sekolah rakyat ini nanti kita akan siapkan ya, kan ini rintisan, rintisan ini untuk mempersiapkan bersamaan, simultan dengan pembangunan di Rancamaya. Jadi nanti begitu Rancamaya siap, tentunya tidak dimulai dari nol. Siswa lanjutan tinggal berpindah saja dari beberapa lokal yang sudah ada sekarang, termasuk juga guru, pendamping, dan semuanya nanti tinggal berpindah dan juga menempati tempat yang baru yang lebih dekat ke sana, ujarnya.
+
+Dedie Rachim menyebut program Sekolah Rakyat merupakan program yang sangat luar biasa dan harus didukung bersama.
+
+Karena tadi saya melihat rata-rata dari keluarga yang sederhana ya, yang mungkin secara teknis mereka belum terbiasa menghadapi situasi asrama dan sebenarnya disinilah dididik, disinilah dipersiapkan. Jadi ini, terima kasih kepada Presiden Prabowo Subianto yang sudah menyiapkan Sekolah Rakyat ini, ujarnya.
+
+Dedie Rachim juga berpesan agar para siswa yang menempati sekolah tersebut dapat menjaga fasilitas yang tersedia dengan baik.
+
+Karena nanti akan dipakai lagi oleh junior-juniornya yang baru. Jadi jangan sampai nanti anak-anak yang baru, warisannya kursi yang rusak, ruangan yang kotor, WC yang berantakan, jangan. Jadi harus sama-sama dijaga, dipelihara. Itu saja pesannya, ucapnya.
 
 ---
 
-Chandra Dukung Anak Kurang Mampu Punya Kesempatan Setara
+Suasana Haru Warnai Open House Sekolah Rakyat Medan, Rico Waas: Rajin Belajar, Jemput Cita-Citamu
 
-PATI – Plt Bupati Pati Risma Ardhi Chandra mendukung kesetaraan kesempatan pendidikan bagi anak-anak dari keluarga kurang mampu melalui program Sekolah Rakyat. Dukungan tersebut disampaikan saat menghadiri Open House Sekolah Rakyat Pati, Sabtu (17/10/2026). Chandra berharap program ini membuka peluang bagi anak-anak kurang mampu untuk meraih cita-cita dan menjadi generasi emas Kabupaten Pati.
+Suasana hangat dan penuh haru menyelimuti Gedung Sekolah Rakyat Terintegrasi 2 Kota Medan di Jalan Flamboyan Raya, Kecamatan Medan Tuntungan. Di tengah gelaran Open House Sekolah Rakyat Permanen Tahun Ajaran 2026/2027 yang dilakukan serentak di seluruh Indonesia, Sabtu 17 Oktober 2026.
 
-Kesempatan tidak datang dua kali. Gunakan kesempatan ini dengan baik untuk satu tujuan, yaitu meraih cita-cita kalian, ujar Chandra di hadapan para siswa.
+Wali Kota Medan Rico Tri Putra Bayu Waas hadir langsung untuk menyapa anak-anak hebat yang kembali mendapatkan hak belajar mereka. Program strategis gagasan Presiden RI Prabowo Subianto ini, diresmikan secara virtual oleh Menteri Sosial RI Saifullah Yusuf dan terhubung langsung dengan 182 titik di berbagai wilayah nusantara.
 
-Chandra menilai Sekolah Rakyat memberikan dukungan pendidikan yang menyeluruh. Selain pembelajaran akademik, siswa mendapatkan pendidikan akhlak, ibadah bersama, makan tiga kali sehari, serta dua kali makanan selingan. Menurutnya, dukungan tersebut menjadi bekal penting bagi anak-anak dari keluarga kurang mampu untuk berkembang.
+Bertepatan dengan hari ulang tahun Presiden Prabowo Subianto, momentum ini sekaligus merayakan pencapaian besar program yang kini telah menaungi lebih dari 44.000 anak dari keluarga prasejahtera, anak putus sekolah, hingga mereka yang sempat hampir kehilangan harapan.
 
-Kalian yang sudah di sini adalah anak-anak pilihan dari ribuan anak di Kabupaten Pati, katanya.
+Di momen itu, Wali Kota Medan Rico Waas membagikan kisah inspiratif tentang dua anak asal Kecamatan Medan Belawan, yaitu Nia dan Danu. Danu yang berusia 9 tahun sebelumnya terpaksa tidak bersekolah karena terkendala finansial keluarga, sementara Nia sempat mengenyam pendidikan.
 
-Chandra mengapresiasi para guru yang tetap menjalankan tugas di tengah berbagai keterbatasan. Ia berharap Sekolah Rakyat tidak hanya melahirkan siswa berprestasi secara akademik, tetapi juga menjadi contoh dalam pembentukan akhlak.
+Di balik keterbatasan tersebut, keduanya memiliki bara semangat yang sama yaitu ingin kembali menuntut ilmu. Sekolah Rakyat hadir sebagai jembatan nyata bagi asa mereka. Saat ditanya mengenai impian masa depan oleh Wali Kota, Nia dengan tegas menjawab ingin menjadi seorang tentara, sedangkan Danu bercita-cita menjadi seorang Wali Kota.
 
-Tahun depan, saat sekolah ini memasuki ulang tahun kedua, saya tantang kalian untuk menunjukkan prestasi. Buktikan bahwa kalian mampu menjadi anak-anak yang membanggakan, tegasnya.
+Kita mendoakan Sekolah Rakyat ini terus bisa maju dan memajukan anak-anak seperti Nia dan Danu. Insya Allah dengan dukungan dan dorongan dari kita semua, anak-anak kita ini bisa mencapai cita-cita yang mereka impikan, ungkap Rico Waas optimis.
 
-Pemkab Pati, lanjut Chandra, berkomitmen mendukung keberlanjutan program Sekolah Rakyat. Dinas Sosial akan dilibatkan dalam proses rekrutmen siswa pada tahun berikutnya bersama Program Keluarga Harapan (PKH). Pemkab juga akan melakukan pendampingan secara berkala untuk memantau perkembangan siswa.
+Rico Waas juga menegaskan bahwa Sekolah Rakyat tidak hanya berfungsi sebagai sarana memproleh ilmu pengetahuan semata, melainkan wadah strategis untuk membentuk kedisiplinan dan karakter anak-anak agar kelak mampu menggapai cita-cita serta memutus rantai kemiskinan.
 
-Kesempatan pendidikan ini sangat kami butuhkan untuk masyarakat Kabupaten Pati yang kurang mampu. Kami ingin anak-anak dari keluarga kurang mampu punya kesempatan belajar yang sama dengan anak-anak lain. Saya kira Sekolah Rakyat ini akan melahirkan generasi emas Kabupaten Pati, ungkap Chandra.
+Saya berpesan kepada anak-anak ku semua agar belajar dengan tekun, menjaga kedisiplinan, serta membangun pertemanan yang baik, sekaligus saya juga minta kepala sekolah agar menjaga dan membimbing anak-anak didik ini dengan sepenuh hati, pesan Rico Waas.
 
-Ia juga menyampaikan bahwa kehadiran orang tua dalam kegiatan tersebut menjadi kesempatan untuk melihat langsung perkembangan anak-anak mereka. Ia menyebut perubahan terlihat terutama pada aspek kemandirian siswa.
-
-Terkait peluang penambahan kuota siswa, Chandra menjelaskan bahwa kewenangan tersebut berada pada Dinas Sosial. Karena itu, kebutuhan penambahan kuota perlu dikoordinasikan melalui instansi yang berwenang.
-
-Open House Sekolah Rakyat Pati turut dihadiri perwakilan Universitas Pertahanan, Penjabat Sekretaris Daerah Kabupaten Pati, Kepala Dinas Sosial Kabupaten Pati, Kepala Sentra Margolaras, Kepala Sekolah Rakyat Terintegrasi (SRT) 1 Tlogowungu, unsur Forkopimcam Tlogowungu, serta para tamu undangan.
+Senada dengan hal tersebut, Menteri Sosial RI Saifullah Yusuf dalam sambutanya mengatakan bahwa Sekolah Rakyat tidak hanya sekadar sarana transfer ilmu pengetahuan, melainkan wujud nyata amanat UUD 1945 Pasal 34 tentang perlindungan fakir miskin dan anak terlantar oleh negara.
 
 ---
 
-Kementerian PU, KSP dan Kemensos Perkuat Sinergi Percepatan Penyelesaian Sekolah Rakyat
+Menko PM, Muhaimin Iskandar Sebut Sekolah Rakyat Jadi Model Pendidikan dan Politik Pemberdayaan Nasional
 
-Jakarta – Kementerian Pekerjaan Umum (PU) bersama Kantor Staf Presiden (KSP) dan Kementerian Sosial menyelenggarakan Rapat Koordinasi (Rakor) Percepatan Pembangunan Sekolah Rakyat (SR) Tahap II di Auditorium Kementerian PU, Rabu (20/5). Rakor ini menjadi forum penguatan sinergi lintas kementerian/lembaga dan seluruh pemangku kepentingan guna memastikan percepatan penyelesaian pembangunan Sekolah Rakyat Tahap II berjalan sesuai target sehingga siap digunakan pada Tahun Ajaran baru 2026/2027.
+melainkan telah berkembang menjadi model pendidikan sekaligus instrumen pemberdayaan masyarakat untuk memutus mata rantai kemiskinan.
 
-Mewakili Menteri PU Dody Hanggodo, Plt Direktur Jenderal Prasarana Strategis Kementerian PU Kuswara menyampaikan dalam sambutannya, Program Sekolah Rakyat merupakan bagian dari upaya negara untuk memperluas akses pendidikan yang layak, berkualitas, dan inklusif bagi masyarakat yang membutuhkan.
+Hal itu disampaikan Muhaimin saat memberikan sambutan dalam Malam Anugerah Jurnalistik Sekolah Rakyat 2026 yang diselenggarakan Kementerian Sosial di Sekolah Rakyat Cikarang, Kabupaten Bekasi, Jawa Barat, Sabtu (17/10/2026).
 
-Sebagaimana diamanatkan dalam Instruksi Presiden No. 8 Tahun 2025 Tentang Optimalisasi Pelaksanaan Pengentasan Kemiskinan dan Penghapusan Kemiskinan Ekstrem, Kementerian PU mendapat tugas untuk mendukung program Sekolah Rakyat melalui penyediaan sarana dan prasarana strategis bagi masyarakat miskin dan miskin ekstrem, ujar Kuswara.
+Menurut Muhaimin, Sekolah Rakyat merupakan gagasan dan terobosan Presiden Prabowo Subianto yang sejak awal dirancang untuk menjangkau masyarakat paling miskin, terutama mereka yang selama ini belum tersentuh berbagai kebijakan negara atau the invisible people.
 
-Berdasarkan data, pembangunan Sekolah Rakyat Tahap II tersebar di 93 lokasi yang berada di 29 provinsi dan 91 kabupaten/kota. Seluruh lokasi tersebut dalam tahap konstruksi dengan progres fisik rata-rata mencapai sekitar 57% per 19 Mei 2026.
+Hari ini kita semua telah menyaksikan Sekolah Rakyat yang didesain sejak awal benar-benar menjangkau masyarakat miskin, terutama yang tidak terjangkau kebijakan, the invisible people, ujar Muhaimin.
 
-Kementerian PU berkomitmen untuk memastikan penyelesaian Pembangunan Sekolah Rakyat Tahap II sebanyak 93 lokasi yang ditargetkan selesai pada tanggal 20 Juni 2026. Sebagai bentuk komitmen percepatan, Menteri PU juga melakukan pengawasan secara langsung di lapangan untuk memastikan akselerasi pekerjaan berjalan sesuai target, kata Kuswara.
+Ia mengatakan kehadiran Sekolah Rakyat memberikan inspirasi baru bahwa pendidikan harus ditempatkan sebagai salah satu instrumen utama dalam mengatasi kemiskinan sekaligus membangun masa depan bangsa.
 
-Kementerian PU juga telah membentuk Satuan Tugas Percepatan Pembangunan Sekolah Rakyat yang melibatkan berbagai unit organisasi di lingkungan Kementerian PU. Selain itu, total 67.588 tenaga kerja konstruksi telah dikerahkan dan bekerja dalam tiga shift guna mendukung percepatan penyelesaian pembangunan.
+Sekolah Rakyat hari ini telah hadir mewarnai dan memberi inspirasi kita semua untuk terus meletakkan pendidikan sebagai pemutus mata rantai kemiskinan, membawa masa depan yang lebih baik dan insyaallah membawa kemajuan dan kesejahteraan bangsa Indonesia, katanya.
 
-Deputi IV KSP Fadjar Dwi Wishnuwardhani menyampaikan, rapat koordinasi ini dilaksanakan guna menyelesaikan berbagai kendala pembangunan sehingga target penyelesaian dapat dicapai sesuai jadwal. KSP juga menegaskan agar percepatan pelaksanaan perlu tetap menjaga kualitas hasil pembangunan dan kesiapan operasional. Kita tahu bahwa waktu pelaksanaan sangat terbatas, maka percepatan harus diperhatikan harian tanpa mengabaikan mutu, keselamatan, dan kesiapan operasional, ujarnya.
+Dalam kesempatan tersebut, Muhaimin secara khusus memberikan apresiasi kepada Menteri Sosial Saifullah Yusuf atau Gus Ipul beserta jajarannya yang dinilai berhasil menerjemahkan arahan Presiden menjadi sebuah model pendidikan yang semakin matang.
 
-KSP juga mengapresiasi kolaborasi lintas kementerian/lembaga dan proses verifikasi lapangan yang telah dilakukan, diantaranya verifikasi lapangan pada 22 lokasi SR dan pelaksanaan 3 kali Rakor lintas sektor.
+Muhaimin mengakui bahwa pada awal pelaksanaan, masih terdapat pertanyaan mengenai bagaimana Sekolah Rakyat akan dijalankan, terutama dalam merumuskan pola pendidikan bagi anak-anak dengan latar belakang dan kemampuan yang berbeda-beda.
 
-Kita semua memahami bahwa pelaksanaan program Sekolah Rakyat bukanlah hal yang mudah, program ini bukan hanya membangun fisik gedung, melainkan juga membangun masa depan bangsa. KSP percaya, dengan konsolidasi yang kuat, eksekusi yang disiplin serta ketegasan di setiap lini, target 20 Juni 2026 bukanlah suatu hal yang mustahil, tegas Fadjar.
+Awalnya Pak Mensos dan saya juga ragu-ragu, sekolah ini bagaimana polanya? Alhamdulillah, Pak Mensos atas perintah Presiden berhasil mewujudkan ini semua, ujar Muhaimin yang kemudian mengajak hadirin memberikan tepuk tangan kepada Menteri Sosial.
 
-Dalam rapat koordinasi tersebut, turut hadir Ketua Sekretariat Bersama Sekolah Rakyat Herman Koswara, jajaran Kementerian Sosial, serta perwakilan penyedia jasa pembangunan Sekolah Rakyat Tahap II. (May)
+Ia menilai perkembangan Sekolah Rakyat semakin menunjukkan arah yang jelas dan prospek yang menjanjikan.
 
-Apakah informasi di atas cukup membantu?
+Alhamdulillah, Sekolah Rakyat telah memiliki model yang amat sangat mapan, pasti, dan prospeknya mencerahkan, katanya.
 
----
+Muhaimin berharap pendekatan pendidikan yang dikembangkan di Sekolah Rakyat dapat menjadi inspirasi bagi sistem pendidikan nasional, terutama dalam memberikan ruang bagi setiap anak untuk berkembang sesuai minat, bakat, dan potensinya.
 
-Tabanan, 2 Oktober 2026 — Politeknik Transportasi Darat Bali (Poltrada Bali) memperingati Dies Natalis ke-7 dengan menggelar rangkaian kegiatan edukatif bagi generasi muda. Kegiatan yang berlangsung pada 1–2 Oktober 2026 di Kampus Poltrada Bali, Tabanan, tersebut mengangkat tema keselamatan berlalu lintas, teknologi tepat guna, dan edukasi transportasi.
-
-Sebanyak 99 siswa Sekolah Rakyat Terintegrasi 3 Provinsi Bali mengikuti rangkaian kegiatan pada hari pertama. Kegiatan ini menjadi bagian dari upaya Poltrada Bali memperluas manfaat pendidikan vokasi sekaligus menanamkan budaya keselamatan berlalu lintas dan pemanfaatan teknologi sejak dini.
-
-Pada 1 Oktober 2026, para siswa mengikuti pembelajaran interaktif di lingkungan Kampus Poltrada Bali. Selain mendapatkan materi, siswa diajak mengenal dan mempraktikkan sejumlah teknologi tepat guna, seperti alat pemberi pakan ikan otomatis, line follower atau robot autonomous, serta alat penyiram tanaman otomatis.
-
-Melalui kegiatan tersebut, siswa diperkenalkan pada cara kerja, fungsi, dan manfaat teknologi dalam menyelesaikan kebutuhan sehari-hari. Pendekatan praktik diharapkan dapat mendorong rasa ingin tahu, kreativitas, dan kemampuan siswa dalam memahami penerapan teknologi di lingkungan sekitar.
-
-Selain teknologi tepat guna, Poltrada Bali memberikan edukasi Safety Riding dan SALUD (Sadar Lalu Lintas Usia Dini). Materi tersebut mencakup pengenalan potensi risiko di jalan, pentingnya mematuhi aturan lalu lintas, serta pembentukan perilaku aman dan bertanggung jawab sebagai pengguna jalan.
-
-Rangkaian kegiatan berlanjut pada 2 Oktober 2026 sekaligus menjadi bagian dari puncak peringatan Dies Natalis ke-7 Poltrada Bali. Pada kesempatan tersebut, Poltrada Bali meresmikan Taman Lalu Lintas Poltrada Bali sebagai sarana edukasi keselamatan berlalu lintas, khususnya bagi anak-anak usia dini.
-
-Taman Lalu Lintas menjadi sarana pembelajaran yang memungkinkan anak-anak mengenal rambu, marka, aturan dasar, dan perilaku aman di jalan melalui metode bermain sambil belajar. Dengan pendekatan tersebut, edukasi keselamatan diharapkan lebih mudah dipahami dan diingat oleh anak-anak.
-
-Direktur Poltrada Bali, Firga Ariani, mengatakan kegiatan tersebut merupakan bentuk komitmen Poltrada Bali, dengan dukungan Badan Pengembangan Sumber Daya Manusia Perhubungan (BPSDMP), untuk menghadirkan pendidikan yang tidak hanya berorientasi pada keterampilan, tetapi juga keselamatan dan penguasaan teknologi.
-
-Melalui kegiatan ini, kami ingin memberikan pengalaman belajar yang tidak hanya menyenangkan, tetapi juga bermanfaat bagi kehidupan sehari-hari. Keselamatan berlalu lintas dan teknologi tepat guna merupakan pengetahuan penting yang perlu dikenalkan sejak dini agar para siswa tumbuh menjadi generasi yang aman, kreatif, dan adaptif. Kegiatan ini juga menjadi bagian dari semangat Dies Natalis ke-7 Poltrada Bali untuk terus memberikan kontribusi nyata kepada masyarakat, ujar Firga Ariani.
-
-Kepala Sekolah Rakyat Terintegrasi 3 Provinsi Bali, I Putu Jaya Negara, mengapresiasi kolaborasi Poltrada Bali dan BPSDMP dalam kegiatan tersebut. Menurutnya, kegiatan ini memberikan kesempatan kepada siswa untuk memperoleh pengalaman belajar secara langsung di lingkungan pendidikan vokasi.
-
-Kami sangat mengapresiasi kegiatan yang dilaksanakan Poltrada Bali dengan dukungan BPSDMP. Para siswa tidak hanya mendapatkan pengetahuan, tetapi juga kesempatan untuk melihat, mencoba, dan memahami penerapan teknologi serta pentingnya keselamatan berlalu lintas. Pengalaman ini diharapkan dapat memotivasi mereka untuk terus belajar dan mengembangkan potensi diri, ungkap I Putu Jaya Negara.
-
-Rangkaian kegiatan Dies Natalis ke-7 Poltrada Bali menunjukkan komitm
-
-en institusi dalam memperluas manfaat pendidikan vokasi kepada masyarakat. Melalui edukasi keselamatan berlalu lintas, pengenalan teknologi tepat guna, dan penyediaan sarana pembelajaran seperti Taman Lalu Lintas, Poltrada Bali berupaya mendukung pembentukan generasi muda yang memiliki kesadaran keselamatan, kreatif, dan adaptif terhadap perkembangan teknologi.
-
-Kegiatan tersebut juga memperkuat sinergi antara lembaga pendidikan, pemerintah, mitra transportasi, dan masyarakat dalam mendukung edukasi keselamatan serta pengembangan sumber daya manusia di bidang transportasi.
+Kita ingin Sekolah Rakyat ini menjadi model pendidikan yang memberikan kualitas sesuai potensi dirinya, sesuai dengan apa yang menjadi harapan anak-anak didik kita, ucapnya.
 
 ---
 
-Sekolah Rakyat di Desa Campor: Peluang Baru Membangun Kualitas SDM dan Masa Depan Desa
+Gus Ipul Tantang Wartawan Kritis Kawal Sekolah Rakyat
 
-PAMEKASAN — Penetapan lahan seluas 5,6 hektare di Desa Campor, Kecamatan Proppo, sebagai lokasi pembangunan Sekolah Rakyat (SR) menjadi peluang strategis bagi Kabupaten Pamekasan untuk memperkuat akses pendidikan sekaligus mendorong pembangunan berbasis potensi desa.
+Pers memiliki peran penting dalam mengawal kebijakan publik, termasuk program pendidikan yang menyasar masyarakat kurang mampu.
 
-Kementerian Sosial Republik Indonesia telah menyepakati lokasi tersebut setelah melalui proses verifikasi dan survei lapangan. Pemerintah Kabupaten Pamekasan kini menyiapkan kelengkapan administrasi, termasuk dokumen pengadaan tanah, Rencana Tata Ruang Wilayah (RTRW), dan Rencana Kerja Pemerintah Daerah (RKPD). Seluruh persyaratan ditargetkan rampung paling lambat akhir Oktober 2026, sementara pembangunan gedung direncanakan mulai pada tahun anggaran 2027.
+Pemberitaan yang kritis dan berimbang diharapkan mampu mengungkap berbagai persoalan di lapangan sekaligus mendorong perbaikan pelaksanaan program.
 
-Kehadiran Sekolah Rakyat tidak semestinya dipandang sebatas pembangunan gedung pendidikan baru. Lebih dari itu, program ini merupakan peluang untuk memperluas akses pendidikan bagi masyarakat yang membutuhkan, meningkatkan kualitas sumber daya manusia, dan membuka ruang perubahan sosial di tingkat desa.
+Hal tersebut ditegaskan Menteri Sosial Saifullah Yusuf atau Gus Ipul saat malam penganugerahan Lomba Jurnalistik Sekolah Rakyat di aula SR 1 Kabupaten Bekasi, Sabtu (17/10/2026) malam.
 
-Momentum tersebut juga relevan dengan dorongan Bupati Pamekasan, KH. Kholilurrahman, agar pemerintah desa tidak terus bergantung pada dana transfer pusat, melainkan mampu menggali potensi wilayah dan membangun kemandirian. Jika dikelola secara terintegrasi, pembangunan pendidikan dapat menjadi bagian dari strategi jangka panjang untuk memperkuat kapasitas masyarakat desa.
+Gus Ipul meminta insan pers menjalankan fungsi kontrol secara kritis terhadap Program Sekolah Rakyat.
 
-Namun, pembangunan infrastruktur pendidikan harus disertai perencanaan yang matang. Kesiapan tenaga pendidik, fasilitas belajar, keberlanjutan pembiayaan operasional, serta ketepatan sasaran penerima manfaat akan menentukan apakah Sekolah Rakyat benar-benar mampu menghadirkan perubahan.
+Ia menegaskan, wartawan tidak perlu ragu menyampaikan kritik apabila menemukan kekeliruan dalam pelaksanaan program tersebut.
 
-Di sisi lain, pemerintah daerah dapat memanfaatkan momentum ini untuk memperkuat ekosistem ekonomi lokal. Pelibatan UMKM dalam penyediaan kebutuhan pendukung yang sesuai ketentuan, pengembangan keterampilan masyarakat, dan kolaborasi dengan pemerintah desa dapat membuka peluang ekonomi tanpa menggeser tujuan utama program, yakni pelayanan pendidikan.
+Menurut Gus Ipul, kritik dari media merupakan bagian penting dari evaluasi agar Sekolah Rakyat dapat berjalan sesuai tujuan. Pengawasan pers juga dibutuhkan untuk memastikan program pemerintah benar-benar memberikan manfaat bagi masyarakat yang membutuhkan.
 
-Dengan demikian, Sekolah Rakyat di Desa Campor perlu ditempatkan sebagai bagian dari agenda pembangunan yang lebih luas: pendidikan sebagai fondasi peningkatan kualitas manusia, desa sebagai ruang tumbuhnya potensi lokal, dan pemerintah sebagai penggerak pemerataan kesempatan.
+Ia membuka ruang bagi wartawan untuk mengungkap berbagai persoalan yang ditemukan di lapangan. Dengan demikian, kekurangan dalam pelaksanaan program dapat diketahui dan ditindaklanjuti untuk mendorong perbaikan.
+
+Program Sekolah Rakyat dirancang untuk memperluas akses pendidikan bagi anak-anak dari keluarga kurang mampu. Melalui program ini, pemerintah berupaya memberikan kesempatan belajar yang lebih baik sekaligus membuka jalan untuk memutus rantai kemiskinan melalui pendidikan.
+
+Karena itu, pelaksanaan Sekolah Rakyat perlu mendapat pengawasan dari berbagai pihak, termasuk media massa. Pemberitaan yang independen, objektif, dan berimbang diharapkan dapat memastikan program tersebut berjalan transparan, akuntabel, serta tepat sasaran.
+
+Pada kesempatan tersebut, Gus Ipul bersama Menteri Koordinator Bidang Pemberdayaan Masyarakat Abdul Muhaimin Iskandar menyerahkan penghargaan kepada para pemenang Anugerah Jurnalistik Sekolah Rakyat 2026.
+
+Ajang ini menjadi bentuk apresiasi bagi insan pers yang mengangkat kisah pendidikan, perjuangan, dan harapan anak-anak dari keluarga prasejahtera melalui karya jurnalistik.
+
+Kompetisi tersebut mencakup tiga kategori, yakni karya tulis media cetak dan online, video jurnalistik, serta foto jurnalistik.
+
+Dalam kategori media cetak dan online, Mohammad Iqbal Shukri dari Tribun Jateng berhasil meraih juara pertama melalui karya berjudul Menjemput Masa Depan yang Hampir Hilang.
+
+Posisi kedua ditempati Sigiranus Marutho Bere dari Kompas.com lewat tulisan Memutus Rantai Kemiskinan Ekstrem dari Tanah Karang. Sementara itu, Dini Suciatiningrum dari IDN Times meraih juara ketiga dengan karya Memuliakan yang Tak Terlihat: Kisah Haru Nenah di Sekolah Rakyat.
+
+---
+
+Gus Ipul di Anugerah Jurnalistik Sekolah Rakyat: Wartawan Lihat yang Terabaikan
+
+Kementerian Sosial (Kemensos) menyelenggarakan Anugerah Jurnalistik Sekolah Rakyat 2026 sebagai bentuk apresiasi terhadap para insan media yang telah mengabarkan kisah-kisah dari Sekolah Rakyat dari berbagai penjuru negeri.
+
+Menteri Sosial Saifullah Yusuf menyampaikan apresiasi setinggi-tingginya kepada para jurnalis yang konsisten memberitakan dan mengawal berbagai program sosial pemerintah, khususnya Sekolah Rakyat.
+
+Gus Ipul menekankan pentingnya sinergi antara pemerintah dan pers sebagai dua pilar yang sama-sama memiliki tanggung jawab menjaga martabat manusia.
+
+Pemerintah bekerja melalui kebijakan, sementara wartawan bekerja melalui fakta. Wartawan bukan sekadar menyampaikan berita, melainkan mata yang membantu melihat mereka yang terabaikan, telinga yang mendengar mereka yang tak terdengar, dan suara bagi mereka yang selama ini tak bersuara, ujarnya dalam acara Anugerah Jurnalistik Sekolah Rakyat di SRT 1 Bekasi, Jawa Barat, Sabtu (17/10) malam.
+
+Lomba karya jurnalistik dengan tema Sekolah Rakyat Memuliakan The Invisible People ini pun menjadi ruang partisipasi dan ekspresi bagi jurnalis untuk mengabarkan kisah-kisah dari Sekolah Rakyat dalam bentuk tulisan, berita foto dan video.
+
+Acara tersebut dihadiri Menteri Koordinator Bidang Pemberdayaan Masyarakat Abdul Muhaimin Iskandar, Sekretaris Jenderal Kemensos M. Hasan Chabibie, jajaran Kementerian Sosial (Kemensos), dan siswa Sekolah Rakyat, serta insan pers.
+
+Gus Ipul mengatakan, kontribusi jurnalis sangat penting dalam penyelenggaraan program Sekolah Rakyat yang digagas langsung oleh Presiden Prabowo Subianto untuk memutus mata rantai kemiskinan melalui jalur pendidikan dan pemberdayaan orang tua siswa.
+
+Tanpa kabar baik yang disampaikan ke publik, kisah-kisah perjuangan para siswa, orang tua, tenaga pendidik, guru, kepala sekolah dan pemerintah dalam mendidik dan mengentaskan kemiskinan tak akan mendapat perhatian serta dukungan luas dari masyarkat.
+
+Dia menjelaskan bahwa Sekolah Rakyat merupakan program strategis berbasis amanat Pasal 34 ayat (1) UUD 1945 untuk memutus mata rantai kemiskinan antargenerasi. Hingga tahun 2026, tercatat 182 titik Sekolah Rakyat di seluruh Indonesia yang menampung lebih dari 44 ribu siswa dari keluarga kurang mampu.
+
+Kita patut bersyukur salah satu gagasan besar Presiden, yaitu Sekolah Rakyat, mulai menunjukkan hasil yang menggembirakan, katanya.
+
+Keberhasilan Sekolah Rakyat, menurut Gus Ipul, merupakan tanggung jawab bersama yang membutuhkan dukungan, masukan, pengawasan, serta kepedulian dari segenap elemen masyarakat.
+
+Peran media massa turut menjadi perhatian utama. Lantaran menjadi salah satu kekuatan penting untuk menyebarluaskan upaya pemerintah untuk mewujudkan amanat UUD 1945 demi pemenuhan hak-hak fakir miskin dan anak-anak telantar oleh negara.
+
+Menko Bidang Pemberdayaan Masyarakat Abdul Muhaimin Iskandar turut mengapresiasi Sekolah Rakyat sebagai model pendidikan berasrama yang mapan. Anaknya disekolahkan dan orangtuanya diberdayakan.
+
+Sekolah Rakyat, dinilainya, menjadi bentuk nyata kepedulian negara kepada masyarakat miskin atau the invisible people yang sebelumnya sering tidak terjangkau oleh kebijakan.
+
+Setiap rupiah APBN kita harus mendorong pemberdayaan. Melalui politik anggaran pemberdayaan dan kolaborasi dengan media, kita optimistis dapat melahirkan manusia Indonesia yang kuat, berdaya, dan mandiri, ujarnya.
+
+Sebelum gelaran malam Anugerah Jurnalistik Sekolah Rakyat 2926 tim juri telah melakukan penilaian terhadap karya para jurnalis yang mengikuti perlombaan pada bulan Juni 2026 dan terpilih 10 nominasi karya tulis, 5 nominasi karya foto, dan 5 nominasi karya video, sebagai berikut:
+
+A. Kategori Jurnalistik Media Cetak dan Online
+
+1. Mohammad Iqbal Shukri (Tribun Jateng)
+
+2. Dini Suciatiningrum (IDN Times)
+
+3. Erwin Prasetio (Sinar Perbatasan)
+
+4. Puji Purwanto (Suara Merdeka Purbalingga)
+
+5. Acep Nazmudin (Kompas.com)
+
+6. Vina Oktavia (Kompas.id)
+
+7. Stefy Thenu (Viva Jogja)
+
+8. Vina Oktavia (Kompas.id)
+
+9. Sigiranus Marutho Bere (Kompas.com)
+
+10. Septian Bima Bagaskara (Detik Jabar)
+
+B. Kategori Jurnalistik Foto
+
+1. Wahyu Budiyanto (BlokBojonegoro.com)
+
+2. Muhammad Iqbal (LKBN ANTARA)
+
+3. Muhammad Bagus Khoirunas (LKBN ANTARA)
+
+4. Andry Denisah (ANTARA Sultra)
+
+5. Priyombodo (Kompas.id)
+
+C. Kategori Jurnalistik Video
+
+1. Amita Putri Caesaria (ANTARA TV)
+
+2. Dwi Nur Oktaviani (DAAI TV)
+
+3. Radifan Setiawan (Tribunnews)
+
+4. Crypto Hermawan (TVRI Jakarta)
+
+5. Sherly Zulkarnaen (TVRI Sumbar)
+
+Dari hasil penilaian para juri terhadap para nominator di atas, berikut daftar pemenang Anugerah Jurnalistik Sekolah Rakyat 2026:
+
+Juara 3 : Dini Suciatiningrum (IDN Times) dengan judul karya Memuliakan yang Tak Terlihat, Kisah Haru Nenah di Sekolah Rakyat
+
+Harapan 1 : Stefy Thenu Jurnalis (Viva Jogja) dengan judul karya Ikhtiar Memupus Kebodohan, Jalan Memutus Rantai Kemiskinan
+
+Harapan 2 : Vina Oktavia (Kompas.id) dengan judul karya Sekolah Rakyat dan Mimpi Anak-anak dari Keluarga Kurang Mampu Naik Kelas
+
+Harapan 3 : Erwin Prasetio (Sinar Perbatasan) dengan judul Sekolah Rakyat Memuliakan, Menyalakan Kembali Mimpi Anak-Anak Perbatasan
+
+Juara 1 : Wahyu Budiyanto (BlokBojonegoro.com) dengan judul karya Cetak Generasi Hebat Lewat Penguatan Karakter dan Digitalisasi di SRMA 36 Bojonegoro
+
+Selain kategori-kategori di atas, Menteri Sosial Saifullah Yusuf secara khusus juga menganugerahkan penghargaan Lifetime Achievement sebagai penghormatan atas dedikasi, konsistensi, dan kontribusi luar biasa yang telah diberikan dalam dunia jurnalistik kepada M. Bagus Khoirunnas. Pewarta foto ANTARA tersebut hilang kontak saat meliput erupsi Gunung Anak Krakatau di Perairan Selat Sunda, Banten pada Senin (7/9/2026). Selain itu, Gus Ipul juga memberikan penghargaan ke Forum Wartawan Sosial (Forwasos).
+
+Malam Anugerah Jurnalistik Sekolah Rakyat 2026 tak hanya menjadi panggung bagi insan media, namun juga ajang siswa Sekolah Rakyat unjuk bakat dan prestasi.
+
+Di depan ribuan pasang mata mereka tampil penuh percaya diri menunjukkan bakat dan kemampuannya. Mulai dari menari, membaca puisi, paduan suara, dan lain sebagainya. Di tengah acara para siswa dan seluruh tamu undangan juga memberikan ucapan selamat hari ulang tahun dan doa bersama untuk kesehatan dan kesuksesan Presiden Prabowo Subianto.
+
+Turut hadir dalam kegiatan ini Sekjen Kemensos M Hasan Chabibie, Staf Ahli Menteri Afrizon Tanjung, Dirjen Rehabilitasi Sosial Supomo, Stafsus Menteri Ishaq Zubaedi Raqib, Stafsus Menteri Fathurohman Taufiq, Tenaga Ahli Menteri Galih Hidayatullah, Tenaga Ahli Menteri Agustinus Budi, Tenaga Ahli Menteri Fajar WH, Kabiro Humas Devi Deliani, serta para tamu undangan.
+
+---
+
+5 Pidato Prabowo paling lucu, bikin kita semua tertawa bingung
+
+Sebelum mulai, Aku ingin menyampaikan klarifikasi. Saya bukan pengamat dan ahli, jadi tidak goblok. Juga bukan antek asing karena gagap bahasa Inggris. Saya hanya ingin mengapresiasi pidato presiden kita, yang terhormat Bapak Prabowo Subianto. Karena pidato blio tidak hanya hebat, menggetarkan, dan meresahkan. Tapi juga LUCU!
+
+Pidato Prabowo memang luar biasa LUCU. Tanpa perlu baca teks yang disiapkan, blio meraung sebagai macan Asia. Bahkan dibandingkan dengan pidato Sukarno pun layak. Bedanya hanya perkara guncangannya. Sukarno mengguncang Nekolim, Prabowo mengguncang IHSG. Sukarno pidato dengan njelimet, Prabowo pidato dengan LUCU! LUCU BANGET POKOKNYA.
+
+Tentu Aku tidak bisa mencatat semua pidato Presiden Prabowo, kecuali mau menulis setebal buku kronik Muhidin M Dahlan. Aku hanya memilih 5 pidato paling LUCU. Yang bisa membuat kita tersenyum getir dan membatin, LUCU banget presidenku ini.
+
+Ndasmu di depan petani-nelayan Gorontalo
+
+Tentu tidak afdal kalau tidak membahas pidato Presiden Prabowo tanpa melibatkan kata-kata ‘ndasmu’. Sayang sekali, pidato ‘ndasmu etik’ terjadi saat masih masa kampanye. Tapi tenang saja, presiden kita tidak kekurangan diksi LUCU ini di masa menjabatnya.
+
+Presiden Prabowo menyebutkan kata sakral ini pada saat menghadiri Puncak Pekan Nasional (PENAS) Kontak Tani dan Nelayan Andalan XVII. Tepatnya di Gorontalo, 24 Juni 2026. Awalnya membahas masa lalunya sebagai ketua HKTI. Pokoknya tani banget!
+
+Lalu Prabowo menyinggung harus mengatur ucapan di depan wartawan. Lalu berujar, Saudara-saudara sekalian, pembangunan harus dilaksanakan dengan baik. Para petani dan nelayan harus kerja keras. Dan tidak boleh minta untung besar-besar, ya. Dan kita semua berharap suatu saat di kelak kemudian hari, kekayaan yang ada dinikmati segelintir orang akan pelan-pelan netes ke bawah. NDASMU, eh sorry. Sorry.
+
+Kata sakral itu diucapkan, dengan janji manis bahwa presiden kita membela petani kecil! Luar biasa kekuatan ‘ndasmu’ ini.
+
+Antek-antek asing di pembekalan guru SD
+
+Awalnya Aku garuk-garuk kepala mendengar pidato Prabowo ini ini. Kenapa harus membahas antek-antek asing di pembekalan guru dan kepala sekolah rakyat? Ternyata Aku yang goblok. Presiden Prabowo sangat visioner. Bahwa perlu membekali para guru sekolah rakyat dengan ancaman nyata kekuatan asing yang ingin menghancurkan negara.
+
+Di hadapan ribuan guru dan kepala sekolah, Prabowo mengingatkan ancaman ini. Ada segelintir orang yang sadar atau tidak sadar menjadi antek-antek asing. Saya katakan mereka sadar mereka antek asing. Mereka tidak suka Indonesia bangkit. Saya katakan mereka tidak suka Indonesia bangkit. Tapi kita yang akan bangkit bersama Indonesia!
+
+Penonton bertepuk tangan. Mengagumi keberanian presiden kita, mantan anggota BoP, menggugat antek asing di depan londo ireng (baca: wartawan). Terdengar tawa tertahan, tanda pidato ini menggetarkan dan LUCU.
+
+Sayang sekali, Aku tidak bisa memasukkan pidato kampanye, HAEE ANTEK-ANTEK ASENG! Padahal inilah puncak LUCU dari pidato blio. Tapi tenang saja, kamu juga tidak akan kekurangan antek asing dalam pidato blio.
+
+Pidato Prabowo menyebut senjata nuklir di depan KADIN
+
+Detak jantungku makin cepat. Keringat dingin menetes di dahi. Semua karena harus menulis bagian paling LUCU dan berani dalam sejarah pidato presiden. Di hadapan pengurus Kamar Dagang Indonesia (KADIN) pada 31 Juli 2026, Presiden Prabowo menyebut rahasia paling angker di dunia.
+
+Presiden kita menyebut Iran telah memiliki senjata nuklir. Lalu menggambarkan kemungkinan Arab Saudi, Uni Emirat Arab, Qatar, hingga Mesir akan mengikuti langkah serupa. Kemudian… pidato Prabowo terpotong siaran iklan. Tentu saja pidato seberani ini tidak mampu ditampung orang-orang bodoh di seluruh dunia.
+
+Keangkeran pidato ini membuahkan penahanan dua penyebar konten. Menandakan betapa LUCU dan beraninya presiden kita membahas hal sensitif. Ayatollah Ali Khamenei pasti tertawa di alam baka. Tapi kalau bukan Prabowo, siapa lagi yang berani? Trump, Xin Jinping, bahkan Putin akan pikir dua kali. Tapi tidak dengan presiden kita. Pemberani memang, aku akui.
+
+Pidato Prabowo menyuruh tanam padi saat panen raya TNI
+
+Mendengar pidato Prabowo ini, Aku langsung tertegun. Lalu menyeletuk, Bener juga! Kenapa ga kepikiran dari kemarin?! Karena pidato saat Panen Raya Serentak di Malang, Presiden Prabowo memberi ide brilian.
+
+Prabowo menyinggung banyak pakar (yang beberapa bulan kemudian dibilang goblok) Indonesia akan jadi negara terkaya ke-4 di 2050. Maka penting untuk memperkuat lini pangan. Presiden Prabowo juga menyinggung pihak yang selalu sambat karena beras mahal. Jujur, Aku sebagai konsumen Beras SPHP merasa tersindir.
+
+Kalau petani beras enggak boleh dapat penghasilan yang tinggi, ya suruh mereka tanam padi sendiri!
+
+Ternyata inilah solusi yang tidak pernah dibahas presiden lain. Saat mendengar pidato Prabowo itu, Aku langsung melompat dan berlari ke halaman. Ingin segera menanam padi seperti TNI dan Polri. Sampai teringat kalau Aku tidak punya sawah. Dan tidak punya uang untuk membeli lahan, bahkan sekadar untuk makam nanti.
+
+Pakar goblok di ulang tahun PAN
+
+Sebelum pidato Gontor, tentu pidato Prabowo ini adalah yang paling LUCU. Presiden Prabowo yang reuni dengan kawan lama di HUT ke-28 PAN tidak hanya menyapa. Tapi juga menunjukkan semangat membara demi rakyat. Juga menyinggung tukang fitnah yang kata blio lebih kejam dari pembunuhan. Fitnah apa? Tentu fitnah kalau negara kita sedang dalam krisis dan salah urus.
+
+Setelah membahas bahwa Presiden Prabowo bersumpah akan melihat Indonesia, para pemfitnah kena tegur yang LUCU. Terserah pakar-pakar yang menganggap dirinya pakar. Saking pintarnya, saking pintarnya, jadi goblok.
+
+Mampus kalian para pakar yang suka memfitnah! Pada Jumat, 19 September 2026, kalian dimarahi presiden kita! Makanya jangan bahas data krisis saja. Kalian harus ingat, KITA BANGSA YANG BESAR!
+
+Sudah kubilang, ada banyak pidato LUCU yang tidak tercantum. Aku hanya bisa merangkum 5 pidato paling LUCU. Dan pastinya akan lebih banyak di masa depan. Maklum, Presiden Prabowo selalu punya ide luar biasa setiap freestyle di depan mic. Jadi mari kita nantikan pidato dan polah LUCU presiden kita berikutnya!
+
+Terminal Mojok merupakan platform User Generated Content (UGC) untuk mewadahi jamaah mojokiyah menulis tentang apa pun. Submit esaimu secara mandiri lewat cara ini ya.
+
+Prabu Yudianto
+
+Penulis kelahiran Yogyakarta. Bekerja sebagai manajer marketing. Founder Academy of BUG. Co-Founder Kelas Menulis Bahagia. Fans PSIM dan West Ham United!
+
+---
+
+Perundungan Siswa Sekolah Rakyat Pati, 14 Anak Jadi Tersangka
+
+Polisi menetapkan 14 anak sebagai tersangka dalam kasus dugaan perundungan dan pengeroyokan terhadap seorang siswa berinisial D (16) di Sekolah Rakyat Terintegrasi 1 Pati, Jawa Tengah. Meski telah berstatus tersangka, seluruhnya tidak ditahan karena masih tergolong anak yang berhadapan dengan hukum (ABH).
+
+Kasus perundungan siswa Sekolah Rakyat Pati tersebut kini memasuki tahap penyidikan. Polisi masih mendalami keterlibatan masing-masing tersangka untuk mengungkap secara terperinci peristiwa yang menimpa korban.
+
+Penyidik telah memeriksa sejumlah saksi, termasuk korban, teman sekolah, dan guru. Namun, korban D belum dapat dimintai keterangan karena masih mengalami trauma berat.
+
+Kasatreskrim Polresta Pati Kompol Dika Hadian Widya Wiratama menyatakan, penyidikan masih berlangsung untuk mendalami kasus dugaan perundungan dan pengeroyokan tersebut.
+
+Dalam kasus perundungan sudah ditetapkan 14 tersangka, tetapi ke-14 pelaku tidak ditahan karena kasusnya anak berhadapan dengan hukum. Penyidik juga sudah memeriksa sejumlah saksi dalam kasus tersebut, ujar Kompol Dika Hadian Widya Wiratama pada Selasa (13/10/2026).
+
+Korban D diketahui masih menjalani pemulihan di rumah setelah sebelumnya mendapatkan perawatan di rumah sakit. Kondisi trauma yang dialami korban membuat penyidik belum dapat meminta keterangannya untuk melengkapi proses penyidikan.
+
+Keterangan korban menjadi salah satu bagian yang dapat membantu penyidik mendalami kronologi kejadian. Polisi juga masih mengumpulkan keterangan dari saksi-saksi lain untuk memperjelas peristiwa perundungan dan pengeroyokan di lingkungan Sekolah Rakyat Terintegrasi 1 Pati.
+
+Sementara itu, keputusan untuk tidak menahan 14 tersangka berkaitan dengan status mereka sebagai anak yang berhadapan dengan hukum. Penanganan perkara tersebut harus memperhatikan ketentuan hukum yang berlaku bagi anak.
+
+Polisi masih melanjutkan penyidikan untuk mengungkap peran masing-masing tersangka, termasuk mendalami rangkaian kejadian yang menyebabkan siswa berinisial D mengalami trauma berat.
+
+---
+
+Wamensos Minta Sentra dan Sentra Terpadu Optimalkan Layanan dan Dukung Penuh Sekolah Rakyat
+
+Wakil Menteri Sosial RI Agus Jabo Priyono menyatakan sentra dan sentra terpadu sebagai unit pelaksana teknis (UPT) Kemensos tak boleh hanya fokus memberikan layanan kepada 12 Pemerlu Atensi Sosial (PAS) semata, melainkan juga berkewajiban mendukung penuh program prioritas Presiden, yaitu Sekolah Rakyat.
+
+Kita juga harus memahami apa yang menjadi program-program dari Bapak Presiden, ujarnya saat memberikan arahan kepada para kepala sentra dan sentra terpadu dalam kegiatan Pemantauan Kinerja Unit Pelaksana di lingkungan Direktorat Jenderal Rehabilitasi Sosial yang digelar di Sentra Pangudi Luhur Bekasi, Jawa Barat, Kamis (15/10/2026).
+
+Dia memberikan contoh baik yang telah dilakukan Direktorat Jenderal Rehabilitasi Sosial dengan menghadirkan Sanggar Kegiatan Belajar (SKB) sebagai jembatan untuk memfasilitasi anak-anak yang belum bisa masuk Sekolah Rakyat. Program-program terobosan semacam ini, menurut Agus Jabo, yang harus diperbanyak di masa mendatang.
+
+Jadi, satu, kita tetap akan melaksanakan program-program strategis, sesuai dengan tugas dan fungsi kita, sesuai dengan yang ada di dalam undang-undang, tetapi juga kemudian kita melaksanakan program-program yang bersifat mandatory, seperti sekolah rakyat. Artinya nanti (Direktorat) Rehsos disamping melaksanakan tugas-tugas pelayanan secara kualitatif dan kuantitatif, juga kemudian harus terlibat aktif dalam melaksanakan program-program yang menjadi mandat Presiden, tegasnya.
+
+Jadi ada mandat undang-undang, ada mandat dari Bapak Presiden yang harus kita respons dan kita sikapi, yang tentunya ini juga harus mulai kita rencanakan ke depannya seperti apa, imbuhnya.
+
+Agus Jabo menekankan, ke depan perumusan program dan kebijakan rehabilitasi sosial harus berbasis pada dua aspek utama, yaitu fokus ke tugas utama melayani 12 PAS serta mendukung program-program prioritas Presiden.
+
+Nah kedepan saya pikir konsepnya harus seperti itu. Layanan terhadap 12 kelompok rentan iya, tetapi mendukung program-program prioritas Presiden yang menjadi mandat ke kita dan itu sudah diterjemahkan oleh Pak Menteri dengan bahasa memakmurkan sentra itu, urainya.
+
+Yang dimaksud dengan memakmurkan sentra di sini adalah menjadikan sentra sebagai Center of Excellence di bidang pelayanan sosial, dengan tiga komponen utama, yaitu Sebagai Pusat Rujukan Utama dalam Layanan Rehabilitasi Sosial, Role Model/ Best Practice serta Pusat Pembelajaran Rehabilitasi Sosial dan Sentra dengan Standar Kualitas Tinggi.
+
+Sehubungan dengan hal ini, Agus Jabo menerjemahkannya secara sederhana. Ia menyampaikan bahwa 12 PAS secara klaster terbagi menjadi dua. Satu adalah masyarakat yang punya problem-problem ekonomi yang dinamakan fakir miskin, yang menjadi urusan Direktorat Perlindungan dan Jaminan Sosial serta Pemberdayaan Sosial.
+
+Sementara klaster kedua adalah masyarakat yang memiliki problem-problem sosial yang harus dikembalikan fungsi sosialnya agar dapat berdaya kembali. Mulai dari lansia, anak-anak, korban Napza, ODGC, dan lain sebagainya.
+
+Tugas kita di Rehsos itu kan 11. Yang 12 tugas dari Linjamsos dan Dayasos. Nah 11 inilah yang kemudian harus kita maksimalkan pelayanannya. Kalau kemudian maksimal pelayanannya itu bisa terwujud itu pasti sentra akan makmur. Memakmurkan sentra sekali lagi bukan hanya sekadar ramai di sentra-sentra, tetapi ramainya itu berisi tentang pelayanan-pelayanan rehabilitasi sosial, jelasnya.
+
+Meski analogi yang disampaikan tampak sederhana, Agus Jabo menyadari bahwa tidak mudah mewujudkannya. Diperlukan dukungan SDM, sarana dan prasarana, adanya speasialisasi dalam menjalankan praktik pelayanan rehabilitasi sosial, standarisasi pelayanan, peningkatan tata kelola sentra rehabilitasi sosial, peningkatan mutu layanan unggulan yang berkualitas, peningkatan mutu layanan dan keuangan serta optimalisasi produktivitas.
+
+Kendati demikian, ia yakin sentra dan sentra terpadu sebagai ujung tombak Direktorat Jenderal Rehsos mampu mewujudkannya lantaran sudah memiliki pengalaman panjang dalam hal rehabilitasi sosial. Bahkan kiprah Kemensos di bidang rehabilitasi sosial sudah diakui banyak pihak.
+
+Kita semua tahu, institusi-institusi dari luar sangat memberikan apresiasi kepada Kemensos terutama dalam hal rehabilitasi, terutama dalam hal deradikalisasi. Dari BNPT, dari Densus itu, itu sangat mengapresiasi dan kita dianggap sebagai kekuatan nomor satu di Indonesia dalam urusan rehabilitasi. Artinya kalau untuk deradikalisasi saja kita hebat, tentunya kita juga akan hebat untuk pelayanan-pelayanan atau proses-proses rehabilitasi di sektor-sektor yang lain, tegasnya.
+
+Selain pengalaman panjang di bidang rehabilitasi sosial, Agus Jabo memastikan dukungan penganggaran menuju target sentra sebagai Center of Excellence di bidang pelayanan sosial, akan tercapai. Sebab, Presiden berkomitmen akan menyediakan bahkan menambah dukungan untuk program-program di bidang sosial.
+
+---
+
+Kemensos Siapkan Tiga Strategi Bantu Masyarakat Keluar dari Kemiskinan
+
+- Kementerian Sosial menyiapkan tiga strategi pengentasan kemiskinan di Jakarta pada Rabu, 14 Oktober 2026.
+
+- Strategi tersebut meliputi pengurangan beban pengeluaran, peningkatan pendapatan melalui pemberdayaan ekonomi, serta pemutusan rantai kemiskinan.
+
+- Kemensos menyalurkan bansos PKH dan sembako serta menghadirkan program Sekolah Rakyat untuk keluarga kurang mampu.
+
+Suara.com - Kementerian Sosial (Kemensos) menyiapkan tiga strategi untuk membantu masyarakat miskin keluar dari kemiskinan. Upaya tersebut mencakup pengurangan beban pengeluaran, peningkatan pendapatan melalui pemberdayaan ekonomi, serta pemutusan rantai kemiskinan antargenerasi melalui pendidikan.
+
+Direktur Jenderal Pemberdayaan Sosial Kemensos, Mira Riyati Kurniasih, mengatakan ketiga strategi itu dirancang agar penanganan kemiskinan tidak hanya bergantung pada bantuan sosial.
+
+Jadinya ada tiga strategi, yang pertama adalah mengurangi beban, kedua adalah meningkatkan pendapatan melalui pemberdayaan dan yang ketiga kami ada transmisi kemiskinan, kata Mira dalam Dialog Nasional Pemberdayaan bertajuk Langkah Transformasi Pemberdayaan Masyarakat Menuju Indonesia Emas 2045 di Jakarta, Rabu (14/10/2026).
+
+Strategi pertama dilakukan dengan mengurangi beban pengeluaran keluarga melalui bantuan sosial. Kemensos menyasar masyarakat pada desil 1 hingga 4, antara lain melalui Program Keluarga Harapan (PKH) dan bantuan sembako.
+
+Strategi yang sudah dilakukan, yang pertama sebenarnya ada tiga strategi yang bisa dilakukan di Kementerian Sosial adalah melalui pendekatan mengurangi beban pengeluaran terlebih dahulu. Pengurangan beban pengeluaran ini adalah memang kita memberikan bantuan sosial kepada masyarakat yang memang berhak dan sesuai dengan kriteria. Jadi sasaran kami di Kementerian Sosial ini adalah di desil 1 sampai 4. Mereka mendapatkan bansos PKH dan sembako, salah satu contohnya, ujar Mira.
+
+Namun, pengurangan beban pengeluaran dinilai belum cukup untuk mengeluarkan masyarakat dari kemiskinan. Karena itu, Kemensos juga mendorong peningkatan pendapatan melalui program pemberdayaan ekonomi.
+
+Kemudian kita hantarkan mereka mempersiapkan, memberikan pemberdayaan untuk meningkatkan pendapatan, kata Mira.
+
+Strategi ketiga berfokus pada pemutusan rantai kemiskinan antargenerasi melalui pendidikan. Salah satu program yang disiapkan adalah Sekolah Rakyat, yang ditujukan untuk membuka akses pendidikan bagi anak-anak dari keluarga kurang mampu.
+
+Transmisi kemiskinan, program salah satunya program Sekolah Rakyat. Artinya, orang yang miskin atau orang tuanya miskin, anaknya tentu tidak boleh ikut miskin lagi, tutur Mira.
+
+Selain memberikan pendidikan kepada anak, Kemensos juga mengupayakan pemberdayaan ekonomi bagi orang tua serta perbaikan rumah keluarga. Dengan pendekatan tersebut, intervensi kemiskinan diharapkan dapat menjangkau kebutuhan anak sekaligus kondisi keluarga.
+
+Anaknya disekolahkan, orang tuanya diberikan pemberdayaan dan rumahnya diperbaiki, kata Mira.
+
+---
+
+Lowongan PPPK Guru Khonghucu di Sekolah Rakyat 2026, Cek Syarat dan Cara Daftar
+
+Kementerian Sosial (Kemensos) membuka seleksi Pegawai Pemerintah dengan Perjanjian Kerja (PPPK) Jabatan Fungsional Guru Agama dan Budi Pekerti di Sekolah Rakyat Tahun Anggaran 2026. Salah satu formasi yang tersedia adalah Guru Agama Khonghucu dan Budi Pekerti dengan alokasi satu orang.
+
+Pendaftaran seleksi dibuka pada 9–15 Oktober 2026 melalui portal Sistem Seleksi Calon Aparatur Sipil Negara (SSCASN) Badan Kepegawaian Negara (BKN). Pelamar yang berminat perlu memperhatikan persyaratan umum, kualifikasi pendidikan, pengalaman mengajar, dan dokumen yang harus disiapkan sebelum mendaftar.
+
+Mengacu pada Pengumuman Kemensos Nomor 3935/1/KP.01.01/10/2026 tertanggal 7 Oktober 2026, rekrutmen ini mencakup enam jenis guru agama dan budi pekerti dengan total 331 formasi. Seleksi dilaksanakan untuk memenuhi kebutuhan tenaga pendidik di lingkungan Sekolah Rakyat.
+
+Formasi PPPK Guru Khonghucu Sekolah Rakyat 2026
+
+Melalui seleksi PPPK Guru Agama dan Budi Pekerti Sekolah Rakyat 2026, Kemensos menyediakan satu formasi untuk jabatan Guru Ahli Pertama – Guru Agama Khonghucu dan Budi Pekerti.
+
+Selain formasi tersebut, tersedia kebutuhan guru agama lain, yakni 210 formasi Guru Agama Islam dan Budi Pekerti, 63 formasi Guru Agama Kristen dan Budi Pekerti, 40 formasi Guru Agama Katolik dan Budi Pekerti, 15 formasi Guru Agama Hindu dan Budi Pekerti, serta dua formasi Guru Agama Buddha dan Budi Pekerti.
+
+Total kebutuhan dalam seleksi ini mencapai 331 formasi. Unit penempatan yang tercantum dalam pengumuman adalah Pusat Pendidikan, Pelatihan, dan Pengembangan Profesi Kesejahteraan Sosial di lingkungan Kemensos.
+
+Syarat PPPK Guru Agama Khonghucu Sekolah Rakyat
+
+Pelamar perlu memenuhi persyaratan umum dan khusus yang tercantum dalam pengumuman seleksi. Berikut sejumlah ketentuan yang perlu diperhatikan.
+
+1. Persyaratan umum
+
+Persyaratan umum yang harus dipenuhi pelamar meliputi:
+
+- Warga Negara Indonesia (WNI) yang bertakwa kepada Tuhan Yang Maha Esa.
+
+- Berusia paling rendah 20 tahun dan paling tinggi 50 tahun pada saat melamar.
+
+- Tidak pernah dipidana penjara berdasarkan putusan pengadilan yang berkekuatan hukum tetap karena tindak pidana dengan ancaman pidana penjara dua tahun atau lebih.
+
+- Tidak pernah diberhentikan secara tidak hormat dari pekerjaan sesuai ketentuan yang berlaku.
+
+- Tidak sedang berkedudukan sebagai ASN, prajurit TNI, atau anggota Polri.
+
+- Tidak menjadi anggota atau pengurus partai politik maupun terlibat politik praktis.
+
+- Memiliki ijazah minimal S-1 atau D-IV sesuai persyaratan jabatan.
+
+- Memiliki sertifikat pendidik dan terdata dalam pangkalan data sertifikat pendidik guru agama pada Kementerian Agama.
+
+- Sehat jasmani dan rohani.
+
+- Bebas dari narkotika, psikotropika, dan zat adiktif lainnya (NAPZA).
+
+- Memiliki catatan kepolisian yang memenuhi persyaratan.
+
+- Bersedia ditempatkan di seluruh wilayah Indonesia.
+
+2. Persyaratan khusus
+
+Selain persyaratan umum, pelamar Guru Agama Khonghucu dan Budi Pekerti perlu memperhatikan ketentuan khusus berikut:
+
+- Beragama sesuai dengan jabatan yang dilamar.
+
+- Memiliki indeks prestasi kumulatif (IPK) minimal 2,75.
+
+- Aktif mengajar sebagai Guru Agama dan Budi Pekerti di Sekolah Rakyat minimal satu tahun, atau memiliki pengalaman mengajar minimal dua tahun secara akumulatif sesuai jabatan yang dilamar.
+
+- Memiliki pemahaman, penghayatan, dan pengamalan agama yang baik, serta bersikap terbuka, moderat, toleran, dan berwawasan keindonesiaan.
+
+- Mampu membaca dan memahami kitab suci pada tingkat mahir.
+
+- Mampu menjelaskan atau menafsirkan makna yang terkandung dalam kitab suci.
+
+- Bersedia bekerja secara sif dan tinggal di sekitar atau di asrama Sekolah Rakyat sesuai ketentuan.
+
+- Bagi pelamar yang tidak aktif mengajar di Sekolah Rakyat, memiliki surat izin mengikuti seleksi dari pejabat yang berwenang sesuai ketentuan.
+
+Dokumen Pendaftaran PPPK Guru Khonghucu
+
+Calon peserta perlu menyiapkan dokumen digital sesuai petunjuk seleksi.
+
+1. Pas foto formal terbaru dengan latar belakang merah.
+
+2. Surat lamaran yang telah ditandatangani dan dibubuhi meterai atau e-meterai sesuai ketentuan.
+
+3. Surat pernyataan sesuai format resmi yang telah ditandatangani dan dibubuhi meterai atau e-meterai.
+
+4. Ijazah asli sesuai kualifikasi jabatan.
+
+5. Transkrip nilai asli.
+
+6. Surat keterangan aktif mengajar dan surat penugasan dari Kementerian Agama bagi pelamar yang masih mengajar di Sekolah Rakyat.
+
+7. Surat keterangan pengalaman mengajar minimal dua tahun dan surat izin mengikuti seleksi bagi pelamar di luar kategori guru aktif Sekolah Rakyat.
+
+Dokumen khusus harus disesuaikan dengan status masing-masing pelamar. Berkas perlu dipindai dengan jelas, sesuai format dan ukuran yang ditentukan pada portal pendaftaran.
+
+Cara Daftar PPPK Guru Khonghucu Sekolah Rakyat 2026
+
+Pendaftaran dilakukan secara daring melalui portal SSCASN BKN.
+
+1. Buat akun atau masuk menggunakan akun SSCASN yang dimiliki.
+
+2. Lengkapi data diri dan informasi pendaftaran sesuai petunjuk.
+
+3. Pilih lokasi pelaksanaan seleksi kompetensi berbasis computer assisted test (CAT) yang tersedia.
+
+4. Unggah seluruh dokumen persyaratan sesuai format yang ditentukan.
+
+5. Periksa kembali data dan dokumen sebelum menyelesaikan pendaftaran.
+
+Pelamar hanya diperbolehkan memilih satu formasi jabatan. Oleh karena itu, pastikan jabatan yang dipilih sesuai dengan kualifikasi pendidikan, sertifikat pendidik, agama yang diajarkan, dan pengalaman mengajar.
+
+Jadwal Seleksi PPPK Guru Khonghucu Sekolah Rakyat 2026
+
+Tahapan awal rekrutmen PPPK Guru Agama dan Budi Pekerti Sekolah Rakyat 2026 adalah sebagai berikut:
+
+Tahapan selanjutnya mencakup seleksi kompetensi berbasis CAT BKN dan seleksi kompetensi tambahan berupa psikotes serta wawancara. Peserta perlu memantau pengumuman resmi untuk mengetahui jadwal lengkap dan ketentuan pelaksanaan setiap tahapan.
+
+---
+
+Pemerintah Turun Tangan Urus Anak Jalanan, Ini Programnya
+
+Menteri Perencanaan Pembangunan Nasional/Badan Perencanaan Pembangunan Nasional Rachmat Pambudy mengatakan pemerintah memiliki program untuk mendaftarkan anak terlantar di jalanan kembali ke sekolah. Program ini tengah digencarkan oleh Kementerian Sosial atau Kemensos.
+
+Rachmat mengatakan hal tersebut merupakan program dari Kementerian Sosial. Melalui program tersebut, anak-anak yang berkeliaran di jalan langsung dilaporkan dan disekolahkan. Kendati demikian, Rachmat tidak menjelaskan apakah sekolah yang dimaksud merupakan Sekolah Rakyat.
+
+Itulah bagian dari tanggung jawab kita, sebagai pemerintah sesuai dengan Pancasila dan Undang-Undang Dasar 1945, ujar Rachmat dalam Dialog Nasional Pemberdayaan, Rabu (14/10/2026).
+
+Pada 2025, Kementerian Sosial sempat menyatakan anak jalanan turut menjadi target utama untuk mengikuti program Sekolah Rakyat yang digulirkan pemerintah.
+
+Sekretaris Direktorat Jenderal Rehabilitasi Sosial KemensosIdit Supriadi Priatna Idit Supriadi Priatna mengungkapkan kelompok anak jalanan yang akan mengikuti program ini, berasal dari Data Tunggal Sosial Ekonomi Nasional (DTSEN) yang telah diintegrasikan dengan Data Pokok Pendidikan (Dapodik).
+
+Dalam hal ini, anak jalanan yang berasal dari desil 1 dan desil 2 atau kelompok paling miskin dalam DTSEN menjadi prioritas utama, terutama anak-anak yang tidak lagi tercatat di Dapodik alias putus sekolah.
+
+Dalam desil 1 itu di dalamnya ada kemiskinan ekstrem, itu yang paling diutamakan. Bahkan, anak-anak yang tidak daftar di Dapodik itu juga menjadi prioritas yang di jalanan-jalanan sendiri itu, yang tidak sekolah, ujar Idit di Bandung, Sabtu (5/7/2025), dikutip dari CNN Indonesia.
+
+---
+
+Pemilihan Material Jadi Kunci Efisiensi Pembangunan Sekolah Rakyat
+
+Pemilihan material konstruksi menjadi salah satu faktor penentu efisiensi pembangunan Sekolah Rakyat, mulai dari biaya awal pembangunan, kebutuhan struktur bangunan, hingga pengeluaran pemeliharaan untuk menjaga usia pakai gedung.
+
+Team Leader Manajemen Konstruksi Sekolah Rakyat Provinsi Sulawesi Selatan 2, M. Sony Hartaman, mengatakan penggunaan material harus mempertimbangkan kondisi iklim dan ketersediaan bahan di setiap wilayah, serta biaya yang timbul sepanjang umur bangunan.
+
+Standar kita sebenarnya sudah lengkap. SNI ada, dan yang belum diatur SNI bisa mengacu ke standar internasional. Kalau perencanaannya benar dan dilaksanakan sesuai spesifikasi, tidak ada alasan bangunan itu gagal sebelum umur rencananya, ujar Sony dalam keterangan resmi, Selasa (13/10/2026).
+
+Sejak periode pertama yang dimulai pada November 2025, pemerintah telah membangun 93 titik Sekolah Rakyat di seluruh Indonesia. Setiap titik terdiri dari 22 hingga 24 massa bangunan dengan kapasitas sekitar 1.260 siswa jenjang SD, SMP, dan SMA.
+
+Dalam pembangunan fasilitas pendidikan tersebut, Sony menyoroti pemilihan material atap yang berpengaruh terhadap biaya konstruksi dan pemeliharaan. Pada delapan titik Sekolah Rakyat yang berada dalam pengawasan langsungnya di Sulawesi Selatan, Sulawesi Tenggara, dan Sulawesi Barat, dia memilih atap berbahan bitumen.
+
+Menurut Sony, harga awal atap bitumen memang lebih tinggi dibandingkan sebagian material atap lainnya. Namun, perhitungan biaya perlu mempertimbangkan usia ekonomis material agar pengeluaran penggantian atap sebelum waktunya dapat dihindari.
+
+Atap murah yang tidak tahan lama pada akhirnya harus diganti total. Kalau dibandingkan usia ekonomisnya, bitumen lebih ekonomis, katanya.
+
+Efisiensi juga dapat diperoleh dari pengurangan beban struktur bangunan. Atap yang lebih berat membutuhkan struktur penopang yang lebih kuat, sehingga berpotensi menambah biaya konstruksi hingga fondasi. Sony memperkirakan bobot atap genteng tanah liat dapat mencapai 10 hingga 15 kali bobot atap bitumen.
+
+Dengan bobot yang lebih ringan, atap bitumen dapat menggunakan rangka baja ringan. Sebaliknya, penggunaan material atap berat membutuhkan struktur penopang yang lebih kuat dan berpotensi meningkatkan biaya pembangunan.
+
+Hampir semua perencana sekarang sudah menggunakan atap jenis ringan. Selain lebih tahan, beban yang diterima struktur juga jauh lebih kecil, ujar Sony.
+
+Pemilihan material juga perlu disesuaikan dengan kondisi geografis dan ketersediaan pasokan. Untuk pembangunan Sekolah Rakyat pada periode berikutnya, terdapat tiga pilihan spesifikasi atap, yakni genteng tanah liat, bitumen, dan uPVC.
+
+Di sejumlah wilayah di luar Jawa, termasuk Sulawesi, penggunaan genteng tanah liat menghadapi kendala karena keterbatasan pabrik di sekitar lokasi proyek. Atap bitumen menjadi salah satu alternatif karena memiliki bentuk menyerupai genteng.
+
+Selain efisiensi biaya, pemenuhan tingkat komponen dalam negeri (TKDN) menjadi pertimbangan dalam pengadaan material.
+
+Sony menyebut pembangunan Sekolah Rakyat di lokasi yang diawasinya mencatat capaian TKDN sebesar 47%, di atas ketentuan minimal 45% untuk bangunan pendidikan yang disampaikan dalam proyek tersebut. Penggunaan atap bitumen produksi dalam negeri turut berkontribusi terhadap capaian itu.
+
+Meski demikian, efisiensi pembangunan tidak berhenti pada pemilihan material dan penyelesaian konstruksi. Sony menilai pengelola juga perlu menyiapkan anggaran operasional dan pemeliharaan agar bangunan dapat mencapai umur rencana yang umumnya ditetapkan hingga 50 tahun untuk struktur gedung negara.
+
+Penyedia material, lanjutnya, perlu melengkapi produk dengan buku panduan operasi dan pemeliharaan yang memuat tata cara perawatan serta jadwal pemeriksaan berkala.
+
+Untuk atap bitumen yang digunakannya, terdapat ketentuan garansi produk selama 15 tahun dari produsen dengan syarat penggunaan dan pemeliharaan sesuai standar.
+
+Jangan hanya bisa membangun, tapi juga harus bisa memelihara. Kalau operasi dan pemeliharaan dijalankan sesuai standar pabrikan, umur rencana bangunannya bisa tercapai, tuturnya.
